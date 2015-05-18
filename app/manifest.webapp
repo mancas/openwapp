@@ -10,7 +10,7 @@
   "developer": {
     "name": "OpenWapp Team"
   },
-  "type": "privileged",
+  "type": "certified",
   "locales": {
     "es": {
       "name": "OpenWapp",
@@ -30,31 +30,11 @@
     "alarms": {
       "description": "Required to periodically receive available messages"
     },
-    "contacts": {
-      "description": "Required to synchronize your contacts",
-      "access": "readwrite"
-    },
     "desktop-notification": {
       "description": "Show notifications to the user"
     },
     "geolocation": {
       "description": "Device geolocation"
-    },
-    "device-storage:sdcard": {
-      "description": "Keep device specific information",
-      "access": "readwrite"
-    },
-    "device-storage:pictures": {
-      "description": "Send and save pictures",
-      "access": "readwrite"
-    },
-    "device-storage:music": {
-      "description": "Send and save audio",
-      "access": "readwrite"
-    },
-    "device-storage:videos": {
-      "description": "Send and save videos",
-      "access": "readwrite"
     },
     "storage": {
       "description": "Local database access"
