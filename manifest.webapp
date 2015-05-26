@@ -52,7 +52,7 @@
     },
     "systemXHR": {
       "description": "Allow XHR requests without CORS restrictions"
-    }
+    },
     "alarms": {
       "description": "Required to periodically receive available messages"
     },
