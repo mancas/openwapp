@@ -1,5 +1,5 @@
 require.config({
-  baseUrl: '/scripts/',
+  baseUrl: '/openwapp/scripts/',
   paths: {
     zeptojs: '../components/zepto/zepto.min',
     jquery: '../components/zepto/zepto',
