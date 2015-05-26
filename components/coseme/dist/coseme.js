@@ -5760,7 +5760,6 @@ CoSeMe.namespace('http', (function(){
       xhr.setRequestHeader('User-Agent', CoSeMe.config.tokenData['u']);
       xhr.setRequestHeader('Accept', 'text/json');
       xhr.send();
-      console.info(xhr);
     },
 
     doContactsRequest: function _doContactsRequest(authField, params, onready, onerror) {

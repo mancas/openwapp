@@ -86,7 +86,7 @@ define([
     },
 
     _currentCommit: function () {
-      return '{{currentCommit}}';
+      return '1.7.6-0-gbbe7016';
     },
 
     revealEmoji: function () {
