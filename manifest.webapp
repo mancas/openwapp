@@ -27,6 +27,32 @@
     { "alarm": "/openwapp/index.html" }
   ],
   "permissions": {
+    "contacts": {
+      "description": "Required to synchronize your contacts",
+      "access": "readwrite"
+    },
+    "device-storage:sdcard": {
+      "description": "Keep device specific information",
+      "access": "readwrite"
+    },
+    "device-storage:pictures": {
+      "description": "Send and save pictures",
+      "access": "readwrite"
+    },
+    "device-storage:music": {
+      "description": "Send and save audio",
+      "access": "readwrite"
+    },
+    "device-storage:videos": {
+      "description": "Send and save videos",
+      "access": "readwrite"
+    },
+    "tcp-socket": {
+      "description": "Enable raw sockets to communicate with the server"
+    },
+    "systemXHR": {
+      "description": "Allow XHR requests without CORS restrictions"
+    }
     "alarms": {
       "description": "Required to periodically receive available messages"
     },
