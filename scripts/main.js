@@ -1,17 +1,17 @@
 require.config({
   baseUrl: '/openwapp/scripts/',
   paths: {
-    zeptojs: '../components/zepto/zepto.min',
-    jquery: '../components/zepto/zepto',
-    underscore: '../components/underscore/underscore-min',
-    backbone: '../components/backbone/backbone',
-    handlebars: '../components/handlebars/handlebars.min',
+    zeptojs: '/openwapp/components/zepto/zepto.min',
+    jquery: '/openwapp/components/zepto/zepto',
+    underscore: '/openwapp/components/underscore/underscore-min',
+    backbone: '/openwapp/components/backbone/backbone',
+    handlebars: '/openwapp/components/handlebars/handlebars.min',
     rtc: 'vendor/ottcomms-rtc-web/rtc',
-    libphonenumber: '../components/PhoneNumber.js',
-    coseme: '../components/coseme/dist/coseme',
-    emoji: '../emoji/emoji',
-    fxosrate: '../components/fxosRate/fxosrate',
-    l10n: '../components/fxosRate/l10n'
+    libphonenumber: '/openwapp/components/PhoneNumber.js',
+    coseme: '/openwapp/components/coseme/dist/coseme',
+    emoji: '/openwapp/emoji/emoji',
+    fxosrate: '/openwapp/components/fxosRate/fxosrate',
+    l10n: '/openwapp/components/fxosRate/l10n'
   },
   shim: {
     'zeptojs': {
