@@ -165,6 +165,8 @@
       });
     }
 
+    var self = this;
+
     Object.keys(_handlers).forEach(handler =>
       Object.defineProperty(this, handler, {
         get: function() {
@@ -172,9 +174,17 @@
         },
         set: function(cb) {
           _handlers[handler] = cb;
-          navConnPromise.queueDependentRequest({handler: handler, cb: cb},
-                                               HandlerSetRequest,
-                                               _sock, 'socketId');
+          function preprocessEvent(event) {
+            if (event.type === 'data' && self.binaryType === 'arraybuffer') {
+              // Returning a ArrayBuffer cause that's what we really get
+              event.data = Uint8Array.from(event.data).buffer;
+            }
+            cb(event);
+          }
+          navConnPromise.queueDependentRequest(
+            {handler: handler, cb: preprocessEvent},
+            HandlerSetRequest,
+            _sock, 'socketId');
         }
       })
     );
@@ -248,6 +258,15 @@
       if (this.readyState !== 'open') {
         debug('I\'m not ready');
         return false;
+      }
+      if (this.binaryType === 'arraybuffer') {
+        // Data is/should be a Uint8Array
+        if (dataToSend.byteLength === undefined) {
+          // Probably this is the wrong exception type, but don't care ATM.
+          throw 'INVALID_DATA_TYPE';
+        }
+        // Not very efficient, this, but IAC doesn't like Uint8Arrays
+        dataToSend = Array.from(new Uint8Array(dataToSend));
       }
       navConnPromise.methodCall(
         {
