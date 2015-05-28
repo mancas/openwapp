@@ -42,7 +42,7 @@ define([
       // Get from the countries.json. responseType to json is not allowed, see
       // http://updates.html5rocks.com/2012/01/Getting-Rid-of-Synchronous-XHRs
       var xhr = new XMLHttpRequest();
-      xhr.open('GET', '/scripts/countries.json', false); // sync request
+      xhr.open('GET', 'scripts/countries.json', false); // sync request
       xhr.send(null);
 
       if (xhr.status === 200) {
