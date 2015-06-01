@@ -1,0 +1,4138 @@
+@charset "UTF-8";
+/* line 17, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+  This file is used to change the CSS sizes of the Gaia UI.
+
+  It's usefulness will be reduced to virtually none once the platform part of
+  https://bugzilla.mozilla.org/show_bug.cgi?id=838505 is landed and Gecko correctly reflect
+  the device dpi and device pixel ratio to web content.
+*/
+/* NOTE: media queries to be able to use images in hi-res */
+/* -------------------------------------------------------------------
+  HEADERS: layout
+  Form factor or Skin dependent styles should NOT be defined here.
+------------------------------------------------------------------- */
+/* line 6, shared/_headers.scss */
+section[role="region"] > header:first-child {
+  position: relative;
+  display: block;
+  z-index: 10;
+  padding: 0;
+  height: 5rem;
+  border: none;
+}
+
+/* line 15, shared/_headers.scss */
+section[role="region"] > header:first-child h1 {
+  font-size: 2.3rem;
+  line-height: 5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 1rem;
+  height: 100%;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+/* line 30, shared/_headers.scss */
+section[role="region"] > header:first-child h1 em {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1em;
+  font-style: normal;
+}
+
+/* line 37, shared/_headers.scss */
+section[role="region"] > header:first-child menu {
+  height: 100%;
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+/* ----------------------------------
+  Buttons
+---------------------------------- */
+/* line 49, shared/_headers.scss */
+section[role="region"] > header:first-child a,
+section[role="region"] > header:first-child button {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  float: left;
+  min-width: 5rem;
+  width: auto;
+  height: 5rem;
+  border: none;
+  background: none;
+  padding: 0 1rem;
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 5rem;
+  border-radius: 0;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: none;
+  font-style: italic;
+}
+
+/* Pressed state */
+/* line 73, shared/_headers.scss */
+section[role="region"] > header:first-child a:focus {
+  outline: none;
+}
+
+/* line 77, shared/_headers.scss */
+section[role="region"] > header:first-child button::-moz-focus-inner {
+  outline: none;
+  border: none;
+  margin-top: -0.2rem;
+  /* To fix line-height bug (697451) */
+  padding: 0;
+}
+
+/* Disabled state */
+/* line 86, shared/_headers.scss */
+section[role="region"] > header:first-child a[aria-disabled="true"],
+section[role="region"] > header:first-child button[disabled] {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* ----------------------------------
+  Icons
+---------------------------------- */
+/* line 95, shared/_headers.scss */
+section[role="region"] > header:first-child .icon {
+  display: block;
+  width: 3rem;
+  height: 5rem;
+  background: transparent no-repeat center / 3rem auto;
+  font-size: 0;
+}
+
+/* ----------------------------------
+  Subheader
+---------------------------------- */
+/* line 107, shared/_headers.scss */
+section[role="region"] > header {
+  z-index: 0;
+  height: auto;
+}
+
+/* line 112, shared/_headers.scss */
+section[role="region"] header h2 {
+  margin: 0;
+  padding: 0.8rem 3rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+/* ----------------------------------
+  right-to-left
+---------------------------------- */
+/* line 124, shared/_headers.scss */
+html[dir="rtl"] section[role="region"] > header:first-child menu {
+  float: left;
+}
+
+/* line 129, shared/_headers.scss */
+html[dir="rtl"] section[role="region"] > header:first-child button,
+html[dir="rtl"] section[role="region"] > header:first-child a {
+  float: right;
+}
+
+/* line 133, shared/_headers.scss */
+html[dir="rtl"] section[role="region"] > header:first-child .icon-back {
+  transform: rotate(180deg);
+}
+
+/* -----------------------------------------------------------------
+  HEADER SKIN: default
+  Default values in case we are not overriding them using
+  class="skin-*"
+----------------------------------------------------------------- */
+/* line 143, shared/_headers.scss */
+section[role="region"] > header:first-child {
+  color: #fff;
+  background-color: #f97c17;
+}
+
+/* line 148, shared/_headers.scss */
+section[role="region"] > header:first-child h1 {
+  color: #fff;
+}
+
+/* line 153, shared/_headers.scss */
+section[role="region"] > header:first-child a,
+section[role="region"] > header:first-child button {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 160, shared/_headers.scss */
+section[role="region"] > header:first-child a:active,
+section[role="region"] > header:first-child button:active,
+section[role="region"] > header:first-child a:hover,
+section[role="region"] > header:first-child button:hover {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+/* line 165, shared/_headers.scss */
+section[role="region"] > header:first-child a:focus,
+section[role="region"] > header:first-child button:focus {
+  background-color: transparent;
+}
+
+/* ----------------------------------
+  Icons
+---------------------------------- */
+/* line 173, shared/_headers.scss */
+section[role="region"] > header:first-child .icon-add {
+  background-image: url(images/shared/headers/images/icons/add.png);
+}
+
+/* line 177, shared/_headers.scss */
+section[role="region"] > header:first-child .icon-compose {
+  background-image: url(images/shared/headers/images/icons/compose.png);
+}
+
+/* line 181, shared/_headers.scss */
+section[role="region"] > header:first-child .icon-edit {
+  background-image: url(images/shared/headers/images/icons/edit.png);
+}
+
+/* line 185, shared/_headers.scss */
+section[role="region"] > header:first-child .icon-send {
+  background-image: url(images/shared/headers/images/icons/send.png);
+}
+
+/* line 189, shared/_headers.scss */
+section[role="region"] > header:first-child .icon-close {
+  background-image: url(images/shared/headers/images/icons/close.png);
+}
+
+/* line 193, shared/_headers.scss */
+section[role="region"] > header:first-child .icon-back {
+  background-image: url(images/shared/headers/images/icons/back.png);
+}
+
+/* line 197, shared/_headers.scss */
+section[role="region"] > header:first-child .icon-menu {
+  background-image: url(images/shared/headers/images/icons/menu.png);
+}
+
+/* line 201, shared/_headers.scss */
+section[role="region"] > header:first-child .icon-user {
+  background-image: url(images/shared/headers/images/icons/user.png);
+}
+
+/* line 205, shared/_headers.scss */
+section[role="region"] > header:first-child .icon-up {
+  background-image: url(images/shared/headers/images/icons/up.png);
+}
+
+/* line 209, shared/_headers.scss */
+section[role="region"] > header:first-child .icon-down {
+  background-image: url(images/shared/headers/images/icons/down.png);
+}
+
+/* line 213, shared/_headers.scss */
+section[role="region"] > header:first-child .icon-options {
+  background-image: url(images/shared/headers/images/icons/options.png);
+}
+
+/* ----------------------------------
+  Subheader
+---------------------------------- */
+/* line 221, shared/_headers.scss */
+section[role="region"] header h2 {
+  color: #424242;
+  border-bottom: solid 0.1rem #e6e6e6;
+}
+
+/* -----------------------------------------------------------------
+  HEADER SKIN: comms
+  .skin-comms will override default values
+----------------------------------------------------------------- */
+/* line 232, shared/_headers.scss */
+.skin-comms section[role="region"] > header:first-child,
+section[role="region"].skin-comms > header:first-child {
+  background-color: #00adad;
+}
+
+/* line 239, shared/_headers.scss */
+.skin-comms section[role="region"] > header:first-child a,
+.skin-comms section[role="region"] > header:first-child button,
+section[role="region"].skin-comms > header:first-child a,
+section[role="region"].skin-comms > header:first-child button {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 250, shared/_headers.scss */
+.skin-comms section[role="region"] > header:first-child a:active,
+.skin-comms section[role="region"] > header:first-child button:active,
+.skin-comms section[role="region"] > header:first-child a:hover,
+.skin-comms section[role="region"] > header:first-child button:hover,
+section[role="region"].skin-comms > header:first-child a:active,
+section[role="region"].skin-comms > header:first-child button:active,
+section[role="region"].skin-comms > header:first-child a:hover,
+section[role="region"].skin-comms > header:first-child button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* line 257, shared/_headers.scss */
+.skin-comms section[role="region"] > header:first-child a:focus,
+.skin-comms section[role="region"] > header:first-child button:focus,
+section[role="region"].skin-comms > header:first-child a:focus,
+section[role="region"].skin-comms > header:first-child button:focus {
+  background-color: transparent;
+}
+
+/* -----------------------------------------------------------------
+  HEADER SKIN: dark
+  .skin-dark will override default values
+----------------------------------------------------------------- */
+/* line 267, shared/_headers.scss */
+section[role="region"].skin-dark > header:first-child,
+.skin-dark > section[role="region"] > header:first-child {
+  background-color: #242d33;
+}
+
+/* line 274, shared/_headers.scss */
+.skin-dark section[role="region"] > header:first-child a,
+.skin-dark section[role="region"] > header:first-child button,
+section[role="region"].skin-dark > header:first-child a,
+section[role="region"].skin-dark > header:first-child button {
+  color: #00aac5;
+}
+
+/* line 285, shared/_headers.scss */
+.skin-dark section[role="region"] > header:first-child a:active,
+.skin-dark section[role="region"] > header:first-child button:active,
+.skin-dark section[role="region"] > header:first-child a:hover,
+.skin-dark section[role="region"] > header:first-child button:hover,
+section[role="region"].skin-dark > header:first-child a:active,
+section[role="region"].skin-dark > header:first-child button:active,
+section[role="region"].skin-dark > header:first-child a:hover,
+section[role="region"].skin-dark > header:first-child button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 292, shared/_headers.scss */
+.skin-dark section[role="region"] > header:first-child a:focus,
+.skin-dark section[role="region"] > header:first-child button:focus,
+section[role="region"].skin-dark > header:first-child a:focus,
+section[role="region"].skin-dark > header:first-child button:focus {
+  background-color: transparent;
+}
+
+/* line 297, shared/_headers.scss */
+section[role="region"].skin-dark header h2,
+.skin-dark > section[role="region"] header h2 {
+  background-color: #2c353b;
+  color: #fff;
+  border: none;
+}
+
+/* -----------------------------------------------------------------
+  HEADER SKIN: organic
+  .skin-organic will override default values
+----------------------------------------------------------------- */
+/* line 309, shared/_headers.scss */
+section[role="region"].skin-organic > header:first-child,
+.skin-organic section[role="region"] > header:first-child {
+  color: #868692;
+  background-color: #f4f4f4;
+}
+
+/* line 315, shared/_headers.scss */
+section[role="region"].skin-organic > header:first-child h1,
+.skin-organic section[role="region"] > header:first-child h1 {
+  color: #868692;
+}
+
+/* line 322, shared/_headers.scss */
+section[role="region"].skin-organic > header:first-child a,
+section[role="region"].skin-organic > header:first-child button,
+.skin-organic section[role="region"] > header:first-child a,
+.skin-organic section[role="region"] > header:first-child button {
+  color: #00aac5;
+}
+
+/* line 329, shared/_headers.scss */
+section[role="region"].skin-organic > header:first-child a:focus,
+section[role="region"].skin-organic > header:first-child button:focus,
+.skin-organic section[role="region"] > header:first-child a:focus,
+.skin-organic section[role="region"] > header:first-child button:focus {
+  background-color: transparent;
+}
+
+/* ----------------------------------
+  Icons
+---------------------------------- */
+/* line 338, shared/_headers.scss */
+section[role="region"].skin-organic > header:first-child .icon-back,
+.skin-organic section[role="region"] > header:first-child .icon-back {
+  background-image: url(images/shared/headers/images/icons/organic/back.png);
+}
+
+/* line 343, shared/_headers.scss */
+section[role="region"].skin-organic > header:first-child .icon-close,
+.skin-organic section[role="region"] > header:first-child .icon-close {
+  background-image: url(images/shared/headers/images/icons/organic/close.png);
+}
+
+/* line 348, shared/_headers.scss */
+section[role="region"].skin-organic > header:first-child .icon-add,
+.skin-organic section[role="region"] > header:first-child .icon-add {
+  background-image: url(images/shared/headers/images/icons/organic/add.png);
+}
+
+/* line 353, shared/_headers.scss */
+section[role="region"].skin-organic > header:first-child .icon-edit,
+.skin-organic section[role="region"] > header:first-child .icon-edit {
+  background-image: url(images/shared/headers/images/icons/organic/edit.png);
+}
+
+/* ----------------------------------
+  Subheader
+---------------------------------- */
+/* line 362, shared/_headers.scss */
+section[role="region"].skin-organic header h2,
+.skin-organic section[role="region"] header h2 {
+  background-color: #e7e7e7;
+  color: #4d4d4d;
+  border: none;
+}
+
+/* ----------------------------------
+ * Progress + activities
+ * ---------------------------------- */
+/* Spinner */
+/* line 6, shared/_progress_activity.scss */
+progress:not([value]) {
+  background: url(images/shared/progress_activity/default.png) no-repeat center center/100% auto;
+  animation: 0.9s rotate infinite steps(30);
+  width: 2.9rem;
+  height: 2.9rem;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
+  /* line 6, shared/_progress_activity.scss */
+  progress:not([value]) {
+    background-image: url(images/shared/progress_activity/default2x.png);
+  }
+}
+@media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
+  /* line 6, shared/_progress_activity.scss */
+  progress:not([value]) {
+    background-image: url(images/shared/progress_activity/default2x.png);
+  }
+}
+
+/* line 19, shared/_progress_activity.scss */
+progress:not([value])::-moz-progress-bar {
+  background: none;
+}
+
+/* Progress bar */
+/* line 24, shared/_progress_activity.scss */
+progress[value] {
+  width: 100%;
+  background: #333;
+  border: none;
+  border-radius: 0.3rem;
+  height: 0.3rem;
+  display: block;
+}
+
+/* line 33, shared/_progress_activity.scss */
+progress[value]::-moz-progress-bar {
+  background: #01c5ed;
+  border-radius: 0;
+}
+
+/* Progress bar */
+/* line 39, shared/_progress_activity.scss */
+progress[value].pack-activity {
+  background-image: url(images/shared/progress_activity/activity.png);
+  background-repeat: repeat;
+  background-size: auto 100%;
+  animation: 0.5s move infinite steps(15);
+}
+
+/* Labels */
+/* line 47, shared/_progress_activity.scss */
+p[role="status"] {
+  padding: 0.5rem;
+  font: 300 2.25rem/1.4em "MozTT", Sans-serif;
+  color: #fff;
+}
+
+/* line 53, shared/_progress_activity.scss */
+p[role="status"] progress:not([value]) {
+  margin-right: 0.5rem;
+}
+
+/* line 57, shared/_progress_activity.scss */
+p[role="status"] progress:not([value]) + span {
+  margin-bottom: 0;
+}
+
+/* line 61, shared/_progress_activity.scss */
+p[role="status"] span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0.5rem;
+}
+
+/* Light Activity bar */
+/* line 68, shared/_progress_activity.scss */
+progress[value].pack-activity.light {
+  background-color: #f4f4f4;
+}
+
+/* Animations */
+@keyframes rotate {
+  /* line 75, shared/_progress_activity.scss */
+  from {
+    transform: rotate(1deg);
+  }
+
+  /* line 76, shared/_progress_activity.scss */
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move {
+  /* line 80, shared/_progress_activity.scss */
+  from {
+    background-position: 0 0;
+  }
+
+  /* line 81, shared/_progress_activity.scss */
+  to {
+    background-position: 1rem 0;
+  }
+}
+
+/* ----------------------------------
+* Input areas
+* ---------------------------------- */
+/* line 11, shared/_input_areas.scss */
+form.default input[type="text"],
+form.default input[type="password"],
+form.default input[type="email"],
+form.default input[type="tel"],
+form.default input[type="search"],
+form.default input[type="url"],
+form.default input[type="number"],
+form.default textarea {
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  resize: none;
+  padding: 0.4rem 0.8rem;
+  font: 1.8rem/4rem "MozTT", Sans-serif;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.3rem;
+  box-shadow: none;
+  /* override the box-shadow from the system (performance issue) */
+  background: white url(images/shared/input_areas/ui/shadow.png) repeat-x left top;
+  height: 4rem;
+}
+@media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
+  /* line 11, shared/_input_areas.scss */
+  form.default input[type="text"],
+  form.default input[type="password"],
+  form.default input[type="email"],
+  form.default input[type="tel"],
+  form.default input[type="search"],
+  form.default input[type="url"],
+  form.default input[type="number"],
+  form.default textarea {
+    background-image: url(images/shared/input_areas/ui/shadow2x.png);
+  }
+}
+@media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
+  /* line 11, shared/_input_areas.scss */
+  form.default input[type="text"],
+  form.default input[type="password"],
+  form.default input[type="email"],
+  form.default input[type="tel"],
+  form.default input[type="search"],
+  form.default input[type="url"],
+  form.default input[type="number"],
+  form.default textarea {
+    background-image: url(images/shared/input_areas/ui/shadow2x.png);
+  }
+}
+
+/* line 29, shared/_input_areas.scss */
+form.default select {
+  display: inline-block;
+  overflow: hidden;
+  resize: none;
+  padding: 0.4rem 0.8rem;
+  -moz-box-sizing: border-box;
+  font: 1.8rem/4rem "MozTT", Sans-serif;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.3rem;
+  box-shadow: none;
+  background: white url(images/shared/input_areas/ui/shadow.png) repeat-x left top;
+  position: relative;
+  height: 4rem;
+  -moz-appearance: textfield;
+}
+@media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
+  /* line 29, shared/_input_areas.scss */
+  form.default select {
+    background-image: url(images/shared/input_areas/ui/shadow2x.png);
+  }
+}
+@media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
+  /* line 29, shared/_input_areas.scss */
+  form.default select {
+    background-image: url(images/shared/input_areas/ui/shadow2x.png);
+  }
+}
+
+/* line 48, shared/_input_areas.scss */
+form.default textarea {
+  height: 10rem;
+  max-height: 10rem;
+  line-height: 2rem;
+  margin: 0;
+}
+
+/* fix for required inputs with wrong or empty value e.g. [type=email] */
+/* line 63, shared/_input_areas.scss */
+form.default input::-moz-placeholder,
+form.default textarea::-moz-placeholder {
+  color: #858585;
+  opacity: 1;
+}
+
+/* line 69, shared/_input_areas.scss */
+form.default input:-moz-placeholder,
+form.default textarea:-moz-placeholder {
+  color: #858585;
+  opacity: 1;
+}
+
+/* line 74, shared/_input_areas.scss */
+form.default p {
+  position: relative;
+  margin: 0;
+}
+
+/* line 79, shared/_input_areas.scss */
+form.default p + p {
+  margin-top: 1rem;
+}
+
+/* line 84, shared/_input_areas.scss */
+form.default p input + button[type="reset"],
+form.default p textarea + button[type="reset"] {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 3rem;
+  height: 4rem;
+  padding: 0;
+  border: none;
+  font-size: 0;
+  opacity: 0;
+  pointer-events: none;
+  background: transparent url(images/shared/input_areas/icons/clear.png) no-repeat 50% 50%/1.7rem auto;
+}
+
+/* To avoid colission with BB butons */
+/* line 100, shared/_input_areas.scss */
+form.default li input + button[type="reset"]:after,
+form.default li textarea + button[type="reset"]:after {
+  background: none;
+}
+
+/* line 105, shared/_input_areas.scss */
+form.default p input + button[type="reset"],
+form.default p textarea + button[type="reset"] {
+  top: 0;
+  margin: 0;
+}
+
+/* line 110, shared/_input_areas.scss */
+form.default textarea {
+  padding: 1.2rem;
+}
+
+/* line 119, shared/_input_areas.scss */
+form.default p input:focus + button[type="reset"],
+form.default p textarea:focus + button[type="reset"] {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Fieldset */
+/* line 125, shared/_input_areas.scss */
+form.default fieldset {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border-radius: 0.3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  font: 1.8rem/1em "MozTT", Sans-serif;
+  background: white url(images/shared/input_areas/ui/shadow.png) repeat-x left top;
+}
+@media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
+  /* line 125, shared/_input_areas.scss */
+  form.default fieldset {
+    background-image: url(images/shared/input_areas/ui/shadow2x.png);
+  }
+}
+@media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
+  /* line 125, shared/_input_areas.scss */
+  form.default fieldset {
+    background-image: url(images/shared/input_areas/ui/shadow2x.png);
+  }
+}
+
+/* line 139, shared/_input_areas.scss */
+form.default fieldset + fieldset {
+  margin-top: 1.5rem;
+}
+
+/* line 143, shared/_input_areas.scss */
+form.default fieldset legend {
+  -moz-box-sizing: border-box;
+  position: absolute;
+  width: 9.5rem;
+  height: 100%;
+  padding: 0 0.5rem 0 1.5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #333;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+
+/* line 157, shared/_input_areas.scss */
+form.default fieldset legend.action {
+  background: url(images/shared/input_areas/icons/arrow.png) no-repeat 100% 100%/1.2rem;
+}
+@media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
+  /* line 157, shared/_input_areas.scss */
+  form.default fieldset legend.action {
+    background-image: url(images/shared/input_areas/icons/arrow2x.png);
+  }
+}
+@media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
+  /* line 157, shared/_input_areas.scss */
+  form.default fieldset legend.action {
+    background-image: url(images/shared/input_areas/icons/arrow2x.png);
+  }
+}
+
+/* line 164, shared/_input_areas.scss */
+form.default fieldset legend:active {
+  background-color: #008caa;
+  text-shadow: 0.1rem 0.1rem 0 rgba(255, 255, 255, 0.3);
+}
+
+/* line 175, shared/_input_areas.scss */
+form.default fieldset section input[type="text"],
+form.default fieldset section input[type="password"],
+form.default fieldset section input[type="email"],
+form.default fieldset section input[type="tel"],
+form.default fieldset section input[type="search"],
+form.default fieldset section input[type="number"],
+form.default fieldset section textarea {
+  height: 4rem;
+  border: none;
+  border-radius: 0;
+  background: none;
+}
+
+/* line 182, shared/_input_areas.scss */
+form.default fieldset section {
+  display: block;
+  border-left: 0.1rem solid #ddd;
+  border-radius: 0 0.3rem 0.3rem 0;
+  overflow: hidden;
+  margin-left: 9.5rem;
+}
+
+/* line 190, shared/_input_areas.scss */
+form.default fieldset section p {
+  margin: 0;
+  border-bottom: 0.1rem solid #ddd;
+}
+
+/* line 195, shared/_input_areas.scss */
+form.default fieldset section p:last-child {
+  border-bottom: none;
+}
+
+/* Tidy (search/submit) */
+/* line 200, shared/_input_areas.scss */
+form.default[role="search"] {
+  position: relative;
+  height: 3.9rem;
+  background-image: linear-gradient(to bottom, #ebebeb, #fafafa);
+  border-bottom: 0.1rem solid #bdbdbd;
+}
+
+/* line 207, shared/_input_areas.scss */
+section[role="region"] > header:first-child + form.default[role="search"] {
+  /* increase height when underneath a header because of header's shadow */
+  padding-top: 0.3rem;
+  border-bottom: 0.1rem solid #c8c8c8;
+}
+
+/* line 213, shared/_input_areas.scss */
+form.default[role="search"].bottom:after {
+  content: "";
+  position: absolute;
+  top: -0.3rem;
+  right: 0;
+  left: 0;
+  height: 0.3rem;
+  background: url(images/shared/input_areas/ui/shadow-invert.png) repeat-x 0 100%;
+}
+@media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
+  /* line 213, shared/_input_areas.scss */
+  form.default[role="search"].bottom:after {
+    background-image: url(images/shared/input_areas/ui/shadow-invert2x.png);
+  }
+}
+@media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
+  /* line 213, shared/_input_areas.scss */
+  form.default[role="search"].bottom:after {
+    background-image: url(images/shared/input_areas/ui/shadow-invert2x.png);
+  }
+}
+
+/* line 226, shared/_input_areas.scss */
+section[role="region"] > header:first-child + form.default[role="search"]:after {
+  background: none;
+}
+
+/* line 230, shared/_input_areas.scss */
+form.default[role="search"] p {
+  -moz-box-sizing: border-box;
+  padding: 0.3rem 1.2rem;
+  overflow: hidden;
+}
+
+/* line 236, shared/_input_areas.scss */
+form.default[role="search"].full p {
+  padding: 0.3rem 1rem;
+}
+
+/* line 241, shared/_input_areas.scss */
+form.default[role="search"] p input,
+form.default[role="search"] p textarea {
+  height: 3rem;
+  border: 0.1rem solid #c1c1c1;
+  background: white url(images/shared/input_areas/ui/shadow-search.png) repeat-x;
+  font-size: 1.8rem;
+}
+@media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
+  /* line 241, shared/_input_areas.scss */
+  form.default[role="search"] p input,
+  form.default[role="search"] p textarea {
+    background-image: url(images/shared/input_areas/ui/shadow-search2x.png);
+  }
+}
+@media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
+  /* line 241, shared/_input_areas.scss */
+  form.default[role="search"] p input,
+  form.default[role="search"] p textarea {
+    background-image: url(images/shared/input_areas/ui/shadow-search2x.png);
+  }
+}
+
+/* line 256, shared/_input_areas.scss */
+form.default[role="search"] p input:invalid,
+form.default[role="search"] p textarea:invalid {
+  border: none;
+}
+
+/* line 260, shared/_input_areas.scss */
+form.default[role="search"] button.icon {
+  float: left;
+  height: 3.7rem;
+  width: 3rem;
+  border: none;
+  font-size: 0;
+  background: url(images/shared/input_areas/ui/separator.png) no-repeat 100% 50%, url(images/shared/input_areas/ui/background.png) repeat-x 0 100%;
+  background-size: auto 100%;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+/* line 275, shared/_input_areas.scss */
+form.default[role="search"] button.icon:before {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 3.7rem;
+  background: transparent center no-repeat;
+  top: 0;
+  left: 0;
+}
+
+/* line 285, shared/_input_areas.scss */
+form.default[role="search"] p button[type="reset"] {
+  right: 0;
+}
+
+/* line 289, shared/_input_areas.scss */
+form.default[role="search"] button[type="submit"] {
+  float: right;
+  min-width: 6rem;
+  height: 3.8rem;
+  padding: 0 1rem;
+  border: none;
+  color: #333;
+  font: 500 1.8rem/3.2rem "MozTT", Sans-serif;
+  background: url(images/shared/input_areas/ui/separator.png) no-repeat 0 50%, url(images/shared/input_areas/ui/active.png) repeat-x 0 100%;
+  background-size: auto 100%;
+  border-radius: 0;
+  width: auto;
+  border-radius: 0;
+  margin: 0;
+}
+
+/* line 306, shared/_input_areas.scss */
+form.default[role="search"] button[type="submit"] + p > textarea {
+  height: 3rem;
+  line-height: 2rem;
+  font-size: 1.8rem;
+}
+
+/* line 312, shared/_input_areas.scss */
+form.default[role="search"] button[type="submit"] + p button {
+  height: 3.7rem;
+}
+
+/* line 316, shared/_input_areas.scss */
+form.default[role="search"].full button[type="submit"] {
+  display: none;
+}
+
+/* line 321, shared/_input_areas.scss */
+form.default[role="search"] button.icon:active,
+form.default[role="search"] button[type="submit"]:active {
+  background: #008caa;
+  text-shadow: 0.1rem 0.1rem 0 rgba(255, 255, 255, 0.3);
+}
+
+/* line 326, shared/_input_areas.scss */
+form.default[role="search"] button[type="submit"][disabled] {
+  color: #adadad;
+  background: url(images/shared/input_areas/ui/separator.png) no-repeat 0 50%, url(images/shared/input_areas/ui/background.png) repeat-x 0 100%;
+}
+
+/* line 333, shared/_input_areas.scss */
+form.default p button[type="reset"]:focus,
+form.default p button[type="reset"]::-moz-focus-inner {
+  border: none;
+  outline: none;
+}
+
+/******************************************************************************
+ * Right-to-Left layout
+ */
+/* line 348, shared/_input_areas.scss */
+html[dir="rtl"] form.default p input + button[type="reset"],
+html[dir="rtl"] form.default p textarea + button[type="reset"] {
+  right: auto;
+  left: 0;
+}
+
+/* line 353, shared/_input_areas.scss */
+html[dir="rtl"] form.default fieldset legend.action:after {
+  margin: 0 0.5rem 0 0;
+}
+
+/* line 357, shared/_input_areas.scss */
+html[dir="rtl"] form.default fieldset legend {
+  padding: 0 1.5rem 0 0.5rem;
+}
+
+/* line 361, shared/_input_areas.scss */
+html[dir="rtl"] form.default[role="search"] p input {
+  padding: 0;
+}
+
+/* line 369, shared/_input_areas.scss */
+html[dir="rtl"] form.default[role="search"] button[type="submit"] + p > button {
+  left: 0;
+}
+
+/* ----------------------------------
+ * CHECKBOXES / RADIOS
+ * ---------------------------------- */
+/* line 5, shared/_switches.scss */
+label:not([for]) {
+  display: inline-block;
+  vertical-align: middle;
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  background: none;
+}
+
+/* line 15, shared/_switches.scss */
+label:not([for]) input[type="checkbox"],
+label:not([for]) input[type="radio"] {
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 23, shared/_switches.scss */
+label:not([for]) input + span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -1.1rem 0 0 -1.1rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  pointer-events: none;
+}
+
+/* line 33, shared/_switches.scss */
+label:not([for]) input[type="checkbox"] + span {
+  background: url(images/shared/switches/check/default.png) no-repeat center top/2.2rem auto;
+}
+@media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
+  /* line 33, shared/_switches.scss */
+  label:not([for]) input[type="checkbox"] + span {
+    background-image: url(images/shared/switches/check/default2x.png);
+  }
+}
+@media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
+  /* line 33, shared/_switches.scss */
+  label:not([for]) input[type="checkbox"] + span {
+    background-image: url(images/shared/switches/check/default2x.png);
+  }
+}
+
+/* line 40, shared/_switches.scss */
+label:not([for]) input[type="radio"] + span {
+  background: url(images/shared/switches/radio/default.png) no-repeat center top/2.2rem auto;
+}
+@media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
+  /* line 40, shared/_switches.scss */
+  label:not([for]) input[type="radio"] + span {
+    background-image: url(images/shared/switches/radio/default2x.png);
+  }
+}
+@media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
+  /* line 40, shared/_switches.scss */
+  label:not([for]) input[type="radio"] + span {
+    background-image: url(images/shared/switches/radio/default2x.png);
+  }
+}
+
+/* line 47, shared/_switches.scss */
+label:not([for]) input:checked + span {
+  background-position: center bottom;
+}
+
+/* 'Dangerous' switches */
+/* line 53, shared/_switches.scss */
+label:not([for]).danger input[type="checkbox"] + span {
+  background-image: url(images/shared/switches/check/danger.png);
+}
+@media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
+  /* line 53, shared/_switches.scss */
+  label:not([for]).danger input[type="checkbox"] + span {
+    background-image: url(images/shared/switches/check/danger2x.png);
+  }
+}
+@media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
+  /* line 53, shared/_switches.scss */
+  label:not([for]).danger input[type="checkbox"] + span {
+    background-image: url(images/shared/switches/check/danger2x.png);
+  }
+}
+
+/* line 60, shared/_switches.scss */
+label:not([for]).danger input[type="radio"] + span {
+  background-image: url(images/shared/switches/radio/danger.png);
+}
+@media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
+  /* line 60, shared/_switches.scss */
+  label:not([for]).danger input[type="radio"] + span {
+    background-image: url(images/shared/switches/radio/danger2x.png);
+  }
+}
+@media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
+  /* line 60, shared/_switches.scss */
+  label:not([for]).danger input[type="radio"] + span {
+    background-image: url(images/shared/switches/radio/danger2x.png);
+  }
+}
+
+/* ----------------------------------
+ * ON/OFF SWITCHES
+ * ---------------------------------- */
+/* line 72, shared/_switches.scss */
+label input[type="checkbox"][data-type="switch"] + span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -1.1rem 0 0 -2.7rem;
+  width: 5.4rem;
+  height: 2.2rem;
+  pointer-events: none;
+  border: solid 0.1rem #c2c2c2;
+  border-radius: 5.4rem;
+  overflow: hidden;
+  background: url(images/shared/switches/switch/handler.png) no-repeat -0.2rem center;
+  background-size: auto calc(100% + 0.2rem);
+  transition: background 0.18s ease;
+}
+
+/* line 89, shared/_switches.scss */
+label input[data-type="switch"] + span:after,
+label input[data-type="switch"] + span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 5.4rem;
+  z-index: -1;
+  transition: transform 0.2s ease;
+}
+
+/* line 99, shared/_switches.scss */
+label input[data-type="switch"] + span:before {
+  right: 100%;
+  background: #00c3ea url(images/shared/switches/switch/icon.png) no-repeat 0.5rem center;
+  background-size: auto calc(100% - 0.2rem);
+}
+
+/* line 105, shared/_switches.scss */
+label input[data-type="switch"] + span:after {
+  left: 100%;
+  background: #e6e6e6;
+  transform: translateX(-5.4rem);
+}
+
+/* switch: disabled state */
+/* line 113, shared/_switches.scss */
+label input[data-type="switch"]:disabled + span:before,
+label input[data-type="switch"]:disabled + span:after {
+  opacity: 0.2;
+}
+
+/* line 117, shared/_switches.scss */
+label input[data-type="switch"]:disabled + span {
+  opacity: 0.3;
+}
+
+/* line 121, shared/_switches.scss */
+label input[data-type="switch"]:checked:disabled + span {
+  opacity: 1;
+  border: solid 1px #A7DBE6;
+}
+
+/* 'ON' state */
+/* line 128, shared/_switches.scss */
+label input[data-type="switch"]:checked + span {
+  border-color: #00acce;
+  background-position: 3.2rem center;
+}
+
+/* line 133, shared/_switches.scss */
+label input[data-type="switch"]:checked + span:before {
+  transform: translateX(5.4rem);
+}
+
+/* line 137, shared/_switches.scss */
+label input[data-type="switch"]:checked + span:after {
+  transform: translateX(0);
+}
+
+/* line 143, shared/_switches.scss */
+label input[type="checkbox"][data-type="switch"].uninit + span,
+label input[type="checkbox"][data-type="switch"].uninit + span:before,
+label input[type="checkbox"][data-type="switch"].uninit + span:after {
+  transition: none;
+}
+
+/* ----------------------------------
+ * Confirm
+ * ---------------------------------- */
+/* Main dialog setup */
+/* line 6, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] {
+  background: url(images/shared/confirm/images/ui/pattern.png) repeat left top, url(images/shared/confirm/images/ui/gradient.png) no-repeat left top/100% 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.5rem 0 7rem;
+  font-size: 0;
+  /* Using font-size: 0; we avoid the unwanted visual space (about 3px)
+  created by white-spaces and break lines in the code betewen inline-block elements */
+  color: #fff;
+  text-align: left;
+}
+
+/* line 25, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"]:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.1rem;
+  height: 100%;
+  margin-left: -0.1rem;
+}
+
+/* line 34, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] > section {
+  font-weight: lighter;
+  font-size: 2.2rem;
+  color: #FAFAFA;
+  padding: 0 1.5rem;
+  -moz-box-sizing: padding-box;
+  width: 100%;
+  display: inline-block;
+  overflow-y: scroll;
+  max-height: 100%;
+  vertical-align: middle;
+  white-space: normal;
+}
+
+/* line 48, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] h1 {
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  color: #fff;
+  margin: 0;
+  padding: 0 1.5rem;
+}
+
+/* Menu & buttons setup */
+/* line 58, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] menu {
+  white-space: nowrap;
+  margin: 0;
+  padding: 1.5rem;
+  border-top: solid 0.1rem rgba(255, 255, 255, 0.1);
+  background: #2d2d2d url(images/shared/confirm/images/ui/pattern.png) repeat left top;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 72, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] menu button::-moz-focus-inner {
+  border: none;
+  outline: none;
+}
+
+/* line 76, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] menu button {
+  width: 100%;
+  height: 3.8rem;
+  margin: 0 0 1rem;
+  padding: 0 1.5rem;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #fafafa url(buttons/images/ui/default.png) repeat-x left bottom/auto 100%;
+  border: 0.1rem solid #a6a6a6;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 3.8rem;
+  color: #333;
+  text-align: center;
+  text-shadow: 0.1rem 0.1rem 0 rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  outline: none;
+}
+
+/* Press (default & recommend) */
+/* line 103, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] menu button:active,
+form[role="dialog"][data-type="confirm"] menu button.recommend:active,
+a.recommend[role="button"]:active {
+  border-color: #008aaa;
+  color: #333;
+}
+
+/* Recommend */
+/* line 109, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] menu button.recommend {
+  background-image: url(buttons/images/ui/recommend.png);
+  background-color: #00caf2;
+  border-color: #008eab;
+}
+
+/* Danger */
+/* line 117, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] menu button.danger,
+a.danger[role="button"] {
+  background-image: url(buttons/images/ui/danger.png);
+  background-color: #b70404;
+  color: #fff;
+  text-shadow: none;
+  border-color: #820000;
+}
+
+/* Danger Press */
+/* line 126, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] menu button.danger:active {
+  background-image: url(buttons/images/ui/danger-press.png);
+  background-color: #890707;
+}
+
+/* Disabled */
+/* line 132, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] > menu > button[disabled] {
+  background: #5f5f5f;
+  color: #4d4d4d;
+  text-shadow: none;
+  border-color: #4d4d4d;
+  pointer-events: none;
+}
+
+/* line 141, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] menu button:last-child {
+  margin-left: 1rem;
+}
+
+/* line 146, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] menu button,
+form[role="dialog"][data-type="confirm"] menu button:first-child {
+  margin: 0;
+}
+
+/* line 150, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] menu button {
+  width: calc((100% - 1rem) / 2);
+}
+
+/* line 154, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] menu button.full {
+  width: 100%;
+}
+
+/* Specific component code */
+/* line 159, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] p {
+  word-wrap: break-word;
+  margin: 1rem 0 0;
+  padding: 1rem 1.5rem;
+  border-top: 0.1rem solid #686868;
+  line-height: 3rem;
+}
+
+/* line 167, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] p img {
+  float: left;
+  margin-right: 2rem;
+}
+
+/* line 172, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] p strong {
+  font-weight: lighter;
+}
+
+/* line 176, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] p small {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #cbcbcb;
+  display: block;
+}
+
+/* line 183, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] dl {
+  border-top: 0.1rem solid #686868;
+  margin: 1rem 0 0;
+  overflow: hidden;
+  padding-top: 1rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+/* line 192, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] dl > dt {
+  clear: both;
+  float: left;
+  width: 7rem;
+  padding-left: 1.5rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* line 201, shared/_confirm.scss */
+form[role="dialog"][data-type="confirm"] dl > dd {
+  padding-right: 1.5rem;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+/* ----------------------------------
+* Toolbars
+* ---------------------------------- */
+/* line 5, shared/_toolbars.scss */
+[role="toolbar"] {
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+/* line 15, shared/_toolbars.scss */
+[role="toolbar"] ul {
+  float: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 22, shared/_toolbars.scss */
+[role="toolbar"] ul:last-child {
+  float: right;
+}
+
+/* line 26, shared/_toolbars.scss */
+[role="toolbar"] li {
+  float: left;
+}
+
+/* line 30, shared/_toolbars.scss */
+[role="toolbar"] button {
+  width: 5.5rem;
+  height: 4rem;
+  border: none;
+  font-size: 0;
+  background: transparent no-repeat 50% 50% / 3rem auto;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* line 40, shared/_toolbars.scss */
+[role="toolbar"] button:active {
+  background-color: #008aaa;
+}
+
+/* ----------------------------------
+ * Buttons
+ * ---------------------------------- */
+/* line 7, shared/_buttons.scss */
+.button::-moz-focus-inner,
+a[role="button"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: none;
+  outline: none;
+  margin-top: -0.2rem;
+  /* To fix line-height bug (697451) */
+}
+
+/* line 15, shared/_buttons.scss */
+button,
+a[role="button"],
+.button {
+  width: 100%;
+  height: 3.8rem;
+  margin: 0 0 1rem;
+  padding: 0 1.5rem;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #fafafa url(images/shared/buttons/ui/default.png) repeat-x left bottom/auto 100%;
+  border: 0.1rem solid #a6a6a6;
+  border-radius: 0.2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 3.8rem;
+  color: #333;
+  text-align: center;
+  text-shadow: 0.1rem 0.1rem 0 rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  outline: none;
+}
+
+/* Press (default & recommend) */
+/* line 43, shared/_buttons.scss */
+button:active,
+a[role="button"]:active,
+button.recommend:active,
+a.recommend[role="button"]:active {
+  border-color: #008aaa;
+  background: #008aaa;
+  background-size: auto 100%;
+  color: #333;
+}
+
+/* Recommend */
+/* line 52, shared/_buttons.scss */
+button.recommend,
+a[role="button"].recommend {
+  background-image: url(images/shared/buttons/ui/recommend.png);
+  background-color: #00caf2;
+  border-color: #008eab;
+}
+
+/* Danger */
+/* line 61, shared/_buttons.scss */
+button.danger,
+a.danger[role="button"],
+span.danger[role="button"] {
+  background-image: url(images/shared/buttons/ui/danger.png);
+  background-color: #b70404;
+  color: #fff;
+  text-shadow: none;
+  border-color: #820000;
+}
+
+/* Danger Press */
+/* line 72, shared/_buttons.scss */
+button.danger:active,
+a[role="button"].danger:active,
+.button.danger:active {
+  background-image: url(images/shared/buttons/ui/danger-press.png);
+  background-color: #890707;
+}
+
+/* Disabled (default & recommend) */
+/* line 83, shared/_buttons.scss */
+button[disabled],
+a[role="button"][aria-disabled="true"],
+.button[aria-disabled="true"],
+button[disabled].recommend,
+a[role="button"][aria-disabled="true"].recommend,
+.button[aria-disabled="true"].recommend {
+  background: #e7e7e7;
+  border-color: #c7c7c7;
+  color: #c7c7c7;
+  text-shadow: none;
+  pointer-events: none;
+}
+
+/* Danger disabled */
+/* line 94, shared/_buttons.scss */
+button[disabled].danger,
+.button[aria-disabled="true"].danger,
+a[role="button"][aria-disabled="true"].danger {
+  background: #c68484;
+  border-color: #a56464;
+  color: #a56464;
+  text-shadow: none;
+  pointer-events: none;
+}
+
+/* Disabled with dark background */
+/* line 105, shared/_buttons.scss */
+.dark button[disabled],
+.dark .button[aria-disabled="true"],
+.dark a[role="button"][aria-disabled="true"] {
+  background: #5f5f5f;
+  color: #4d4d4d;
+  border-color: #4d4d4d;
+  text-shadow: none;
+  pointer-events: none;
+}
+
+/* ----------------------------------
+ * Buttons inside lists
+ * ---------------------------------- */
+/* line 120, shared/_buttons.scss */
+li button,
+li a[role="button"],
+li .button {
+  position: relative;
+  background: #e7e7e7;
+  text-align: left;
+  /* For hacking box-shadows we need overflow:visible; so we lose text-overflows...*/
+  white-space: normal;
+  overflow: visible;
+}
+
+/* Hacking box-shadow */
+/* line 132, shared/_buttons.scss */
+li button:after,
+li a[role="button"]:after,
+li .button:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 0.2rem;
+  background: url(images/shared/buttons/ui/shadow.png) repeat-x left bottom/auto 100%;
+}
+
+/* Press */
+/* line 145, shared/_buttons.scss */
+li a[role="button"]:active:after,
+li .button:active:after,
+li button:active:after {
+  opacity: 0;
+}
+
+/* Disabled */
+/* line 152, shared/_buttons.scss */
+li button[disabled]:after,
+li a[role="button"][aria-disabled="true"]:after,
+li .button[aria-disabled="true"]:after {
+  background: none;
+}
+
+/* Icons */
+/* line 159, shared/_buttons.scss */
+li button.icon,
+li a[role="button"].icon,
+li .button.icon {
+  padding-right: 3rem;
+}
+
+/* line 165, shared/_buttons.scss */
+li button.icon:before,
+li a[role="button"].icon:before,
+li .button.icon:before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -1.5rem;
+  background: transparent no-repeat center center / 100% auto;
+  pointer-events: none;
+}
+
+/* line 178, shared/_buttons.scss */
+li button.icon-view:before,
+li a[role="button"].icon-view:before {
+  background: url(images/shared/buttons/icons/view.png) no-repeat 1.6rem 0/1rem 9rem;
+}
+
+/* line 183, shared/_buttons.scss */
+li button.icon-view:active:before,
+li a[role="button"].icon-view:active:before {
+  background-position: 1.6rem -3rem;
+}
+
+/* line 188, shared/_buttons.scss */
+li button.icon-view:disabled:before,
+li a[role="button"][aria-disabled="true"].icon-view:before {
+  background-position: 1.6rem -6rem;
+}
+
+/* line 194, shared/_buttons.scss */
+li button.icon-dialog,
+li a[role="button"].icon-dialog,
+li .button.icon-dialog {
+  font-size: 1.7rem;
+}
+
+/* line 200, shared/_buttons.scss */
+li button.icon-dialog:before,
+li a[role="button"].icon-dialog:before,
+li .button.icon-dialog:before {
+  background: url(images/shared/buttons/icons/dialog.png) no-repeat 1.6rem 0/1rem 9rem;
+  top: 100%;
+  margin-top: -2.4rem;
+}
+
+/* line 208, shared/_buttons.scss */
+li button.icon-dialog:active:before,
+li a[role="button"].icon-dialog:active:before,
+li .button.icon-dialog:active:before {
+  background-position: 1.6rem -3rem;
+}
+
+/* line 214, shared/_buttons.scss */
+li button.icon-dialog:disabled:before,
+li a[role="button"][aria-disabled="true"].icon-dialog:before,
+li .button[aria-disabled="true"].icon-dialog:before {
+  background-position: 1.6rem -6rem;
+}
+
+/* ----------------------------------
+ * Buttons inside lists, compact mode
+ * ---------------------------------- */
+/* line 224, shared/_buttons.scss */
+ul.compact,
+ol.compact {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+/* line 229, shared/_buttons.scss */
+ul.compact li,
+ol.compact li {
+  padding: 1.5rem 0 0.5rem 0;
+  border-bottom: solid #bdbdbd 0.1rem;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 237, shared/_buttons.scss */
+ul.compact li label,
+ol.compact li label {
+  padding: 0 1.5rem 1rem 1.5rem;
+  color: #333;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Inputs inside of .button */
+/* line 251, shared/_buttons.scss */
+.button input,
+body[role="application"] .button input {
+  border: 0;
+  background: none;
+}
+
+/* Hides dropdown arrow until bug #649849 is fixed */
+/* line 257, shared/_buttons.scss */
+.button.icon select {
+  width: 130%;
+}
+
+/******************************************************************************
+ * Right-To-Left layout
+ */
+/* line 267, shared/_buttons.scss */
+html[dir="rtl"] li button,
+html[dir="rtl"] li a[role="button"],
+html[dir="rtl"] li .button {
+  text-align: right;
+}
+
+/* line 273, shared/_buttons.scss */
+html[dir="rtl"] li button:after,
+html[dir="rtl"] li a[role="button"]:after,
+html[dir="rtl"] li .button:after {
+  background-position: right bottom;
+}
+
+/* line 279, shared/_buttons.scss */
+html[dir="rtl"] li button.icon,
+html[dir="rtl"] li a[role="button"].icon,
+html[dir="rtl"] li .button.icon {
+  padding-left: 3rem;
+  padding-right: 1rem;
+}
+
+/* line 286, shared/_buttons.scss */
+html[dir="rtl"] li button.icon:before,
+html[dir="rtl"] li a[role="button"].icon:before,
+html[dir="rtl"] li .button.icon:before {
+  left: -1rem;
+  right: inherit;
+}
+
+/* line 292, shared/_buttons.scss */
+html[dir="rtl"] li button.icon-view:before,
+html[dir="rtl"] li a[role="button"].icon-view:before {
+  background-image: url(images/shared/buttons/icons/view_rtl.png);
+  background-position: 1.6rem 0;
+}
+
+/* line 299, shared/_buttons.scss */
+html[dir="rtl"] li button.icon-dialog:before,
+html[dir="rtl"] li a[role="button"].icon-dialog:before,
+html[dir="rtl"] li .button.icon-dialog:before {
+  background-image: url(images/shared/buttons/icons/dialog_rtl.png);
+  background-position: 1.6rem 0;
+}
+
+/* line 1, shared/_overrides.scss */
+section[role="region"] > header:first-child h1 {
+  padding: 0 1rem 0 0;
+}
+
+/* line 5, shared/_overrides.scss */
+section[role="region"] > header:first-child h1 a {
+  font-size: 2rem;
+  text-overflow: inherit;
+  color: inherit;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 13, shared/_overrides.scss */
+section[role="region"] header h2 {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 17, shared/_overrides.scss */
+section[role="region"] > header:first-child .icon.icon-location {
+  background-image: url(images/shared/headers/images/icons/location.png);
+}
+
+/* line 21, shared/_overrides.scss */
+section[role="region"] > header:first-child .icon.icon-attach {
+  background-image: url(images/shared/headers/images/icons/attachments.png);
+}
+
+/* line 25, shared/_overrides.scss */
+section[role="region"] > header:first-child .icon.icon-group {
+  background-image: url(images/shared/headers/images/icons/group.png);
+}
+
+/* line 29, shared/_overrides.scss */
+[role="toolbar"] button:active {
+  background: #008aaa no-repeat 50% 50% / 3rem auto;
+}
+
+/* line 33, shared/_overrides.scss */
+section[role="region"] > header:first-child a {
+  min-width: 3rem;
+}
+
+/* line 108, _common.sass */
+html {
+  font-size: 62.5%;
+}
+/* line 6, _common.sass */
+html {
+  height: 100%;
+}
+/* line 8, _common.sass */
+html body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 112, _common.sass */
+body {
+  font: 1.6rem/2.2rem MozTT, Sans-serif;
+}
+
+/* line 115, _common.sass */
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 120, _common.sass */
+button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=button]::-moz-focus-inner {
+  border: none;
+}
+
+/* line 122, _common.sass */
+.main-wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  position: relative;
+}
+
+/* line 128, _common.sass */
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+/* line 134, _common.sass */
+.page > section {
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+/* line 140, _common.sass */
+.page-wrapper {
+  max-height: -moz-calc(100% - 5rem);
+  max-height: -webkit-calc(100% - 5rem);
+  overflow-y: auto;
+  height: -moz-calc(100% - 5rem);
+  height: -webkit-calc(100% - 5rem);
+}
+
+/* line 147, _common.sass */
+.not-square {
+  color: #ff3939;
+}
+
+/* line 3, _login.sass */
+.page.init .register-page {
+  left: 0%;
+}
+/* line 5, _login.sass */
+.page.init .register-network-page {
+  left: 100%;
+}
+/* line 7, _login.sass */
+.page.init .tos-page {
+  left: 100%;
+}
+/* line 9, _login.sass */
+.page.init .privacy-page {
+  left: 100%;
+}
+/* line 11, _login.sass */
+.page.init .register-confirmation-page {
+  left: 100%;
+}
+/* line 14, _login.sass */
+.page.network-prompt .register-page {
+  left: -100%;
+}
+/* line 16, _login.sass */
+.page.network-prompt .register-network-page {
+  left: 0%;
+}
+/* line 18, _login.sass */
+.page.network-prompt .tos-page {
+  left: 100%;
+}
+/* line 20, _login.sass */
+.page.network-prompt .privacy-page {
+  left: 100%;
+}
+/* line 22, _login.sass */
+.page.network-prompt .register-confirmation-page {
+  left: 100%;
+}
+/* line 25, _login.sass */
+.page.confirmation .register-page {
+  left: -100%;
+}
+/* line 27, _login.sass */
+.page.confirmation .register-network-page {
+  left: -100%;
+}
+/* line 29, _login.sass */
+.page.confirmation .tos-page {
+  left: 100%;
+}
+/* line 31, _login.sass */
+.page.confirmation .privacy-page {
+  left: 100%;
+}
+/* line 33, _login.sass */
+.page.confirmation .register-confirmation-page {
+  left: 0%;
+}
+
+/* line 36, _login.sass */
+#login-page, #tos-page, #confirm-phone-page, #network-prompt-page {
+  position: absolute;
+  transition: left 0.4s ease;
+  width: 100%;
+  font-family: "MozTT", sans-serif;
+}
+/* line 32, _common_register.sass */
+#login-page div.page-wrapper, #tos-page div.page-wrapper, #confirm-phone-page div.page-wrapper, #network-prompt-page div.page-wrapper {
+  background: #e6e6e6;
+}
+/* line 34, _common_register.sass */
+#login-page input[type=submit], #login-page input[type=button], #tos-page input[type=submit], #tos-page input[type=button], #confirm-phone-page input[type=submit], #confirm-phone-page input[type=button], #network-prompt-page input[type=submit], #network-prompt-page input[type=button] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #df351b), color-stop(100%, #f56b1b));
+  background-image: -webkit-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: -moz-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: -o-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  width: 100%;
+  color: white;
+  border: 0.1rem solid #c1331e;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  font-size: 1.7rem;
+  width: 100%;
+}
+/* line 10, _common_register.sass */
+#login-page input[type=submit]:disabled, #login-page input[type=button]:disabled, #tos-page input[type=submit]:disabled, #tos-page input[type=button]:disabled, #confirm-phone-page input[type=submit]:disabled, #confirm-phone-page input[type=button]:disabled, #network-prompt-page input[type=submit]:disabled, #network-prompt-page input[type=button]:disabled {
+  background: #d7d6d6;
+  border-color: #c7c7c7;
+  color: #aaaaaa;
+}
+/* line 14, _common_register.sass */
+#login-page input[type=submit]:active:not(:disabled), #login-page input[type=button]:active:not(:disabled), #tos-page input[type=submit]:active:not(:disabled), #tos-page input[type=button]:active:not(:disabled), #confirm-phone-page input[type=submit]:active:not(:disabled), #confirm-phone-page input[type=button]:active:not(:disabled), #network-prompt-page input[type=submit]:active:not(:disabled), #network-prompt-page input[type=button]:active:not(:disabled) {
+  background: #c1331d;
+  border-color: #c1331e;
+}
+/* line 37, _common_register.sass */
+#login-page input, #login-page select, #login-page legend, #tos-page input, #tos-page select, #tos-page legend, #confirm-phone-page input, #confirm-phone-page select, #confirm-phone-page legend, #network-prompt-page input, #network-prompt-page select, #network-prompt-page legend {
+  font-size: 1.9rem;
+  vertical-align: bottom;
+}
+/* line 40, _common_register.sass */
+#login-page select, #tos-page select, #confirm-phone-page select, #network-prompt-page select {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 7.5rem;
+  border-right: none;
+  text-align: center;
+  padding-top: 0.7rem;
+  padding-left: 0.4rem;
+}
+/* line 48, _common_register.sass */
+#login-page select + input, #tos-page select + input, #confirm-phone-page select + input, #network-prompt-page select + input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  max-width: -moz-calc(100% - 8rem);
+  max-width: -webkit-calc(100% - 8rem);
+}
+/* line 53, _common_register.sass */
+#login-page fieldset, #tos-page fieldset, #confirm-phone-page fieldset, #network-prompt-page fieldset {
+  position: relative;
+  width: 100%;
+  border: none;
+}
+/* line 57, _common_register.sass */
+#login-page fieldset legend, #tos-page fieldset legend, #confirm-phone-page fieldset legend, #network-prompt-page fieldset legend {
+  border: 0.1rem solid #cccccc;
+  border-right: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 0;
+  width: 30%;
+  height: 4rem;
+  float: left;
+  position: relative;
+  text-transform: none;
+}
+/* line 68, _common_register.sass */
+#login-page fieldset input, #tos-page fieldset input, #confirm-phone-page fieldset input, #network-prompt-page fieldset input {
+  width: 70%;
+  position: relative;
+}
+/* line 71, _common_register.sass */
+#login-page a, #tos-page a, #confirm-phone-page a, #network-prompt-page a {
+  color: #4599e1;
+  text-decoration: none;
+}
+/* line 74, _common_register.sass */
+#login-page section.intro, #login-page section.main, #tos-page section.intro, #tos-page section.main, #confirm-phone-page section.intro, #confirm-phone-page section.main, #network-prompt-page section.intro, #network-prompt-page section.main {
+  text-align: center;
+  padding: 1rem 2.5rem;
+}
+/* line 77, _common_register.sass */
+#login-page section.intro p, #login-page section.main p, #tos-page section.intro p, #tos-page section.main p, #confirm-phone-page section.intro p, #confirm-phone-page section.main p, #network-prompt-page section.intro p, #network-prompt-page section.main p {
+  margin-top: 1rem;
+}
+/* line 79, _common_register.sass */
+#login-page section.intro p:first-child, #login-page section.main p:first-child, #tos-page section.intro p:first-child, #tos-page section.main p:first-child, #confirm-phone-page section.intro p:first-child, #confirm-phone-page section.main p:first-child, #network-prompt-page section.intro p:first-child, #network-prompt-page section.main p:first-child {
+  margin-top: 0;
+}
+/* line 81, _common_register.sass */
+#login-page section.intro, #tos-page section.intro, #confirm-phone-page section.intro, #network-prompt-page section.intro {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1.7rem;
+  line-height: 2.25rem;
+  color: #555555;
+  background: #f2f2f2;
+  border-bottom: 0.1rem solid white;
+  min-height: 9rem;
+}
+/* line 89, _common_register.sass */
+#login-page section.main, #tos-page section.main, #confirm-phone-page section.main, #network-prompt-page section.main {
+  padding-top: 2rem;
+  color: #858585;
+  font-size: 1.4rem;
+  line-height: 1.75rem;
+}
+/* line 94, _common_register.sass */
+#login-page section.main p, #tos-page section.main p, #confirm-phone-page section.main p, #network-prompt-page section.main p {
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+/* line 97, _common_register.sass */
+#login-page section.main p.call-to-action, #tos-page section.main p.call-to-action, #confirm-phone-page section.main p.call-to-action, #network-prompt-page section.main p.call-to-action {
+  font-size: 1.4rem;
+  color: #3d3d3d;
+  margin-top: 1.75rem;
+  display: table;
+}
+/* line 102, _common_register.sass */
+#login-page section.main p.call-to-action label, #tos-page section.main p.call-to-action label, #confirm-phone-page section.main p.call-to-action label, #network-prompt-page section.main p.call-to-action label {
+  float: left;
+  display: table-cell;
+}
+/* line 105, _common_register.sass */
+#login-page section.main p.call-to-action label + span, #tos-page section.main p.call-to-action label + span, #confirm-phone-page section.main p.call-to-action label + span, #network-prompt-page section.main p.call-to-action label + span {
+  width: -moz-calc(100% - 5rem);
+  padding-top: 1.1rem;
+  text-align: left;
+  min-height: 5rem;
+  display: table-cell;
+  vertical-align: bottom;
+  float: right;
+}
+/* line 113, _common_register.sass */
+#login-page .spinner, #tos-page .spinner, #confirm-phone-page .spinner, #network-prompt-page .spinner {
+  display: none;
+}
+/* line 115, _common_register.sass */
+#login-page .spinner progress, #tos-page .spinner progress, #confirm-phone-page .spinner progress, #network-prompt-page .spinner progress {
+  margin-top: 1rem;
+}
+/* line 117, _common_register.sass */
+#login-page .hidden, #tos-page .hidden, #confirm-phone-page .hidden, #network-prompt-page .hidden {
+  position: absolute;
+  text-indent: -10000px;
+}
+
+/* line 39, _login.sass */
+#login-page input[type=submit], #confirm-phone-page input[type=submit] {
+  margin-top: 0.8rem;
+}
+
+/* line 42, _login.sass */
+#login-page section.main p {
+  margin-top: 0.5rem;
+}
+/* line 44, _login.sass */
+#login-page section.main p label {
+  margin-left: 0;
+}
+
+/* line 47, _login.sass */
+#confirm-phone-page button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #df351b), color-stop(100%, #f56b1b));
+  background-image: -webkit-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: -moz-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: -o-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  width: 100%;
+  color: white;
+  border: 0.1rem solid #c1331e;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  font-size: 1.7rem;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #cacaca), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(bottom, #cacaca 0%, #ffffff 100%);
+  background-image: -moz-linear-gradient(bottom, #cacaca 0%, #ffffff 100%);
+  background-image: -o-linear-gradient(bottom, #cacaca 0%, #ffffff 100%);
+  background-image: linear-gradient(bottom, #cacaca 0%, #ffffff 100%);
+  color: #333333;
+  border-color: #a6a6a6;
+  padding-top: 0;
+  margin-top: 1.8rem;
+}
+/* line 10, _common_register.sass */
+#confirm-phone-page button:disabled {
+  background: #d7d6d6;
+  border-color: #c7c7c7;
+  color: #aaaaaa;
+}
+/* line 14, _common_register.sass */
+#confirm-phone-page button:active:not(:disabled) {
+  background: #c1331d;
+  border-color: #c1331e;
+}
+/* line 23, _common_register.sass */
+#confirm-phone-page button:active:not(:disabled) {
+  border-color: #a6a6a6;
+  background: #969696;
+}
+
+/* line 52, _login.sass */
+#confirm-phone-page legend {
+  background-color: #e6e6e6;
+}
+
+/* line 56, _login.sass */
+#login-page #carrier-choose, #login-page #network-choose, #login-page #sim-choose, #network-prompt-page #carrier-choose, #network-prompt-page #network-choose, #network-prompt-page #sim-choose {
+  width: 100%;
+  border-right: #cccccc solid 0.1rem;
+}
+
+/* line 3, _validate.sass */
+.page.validate .screenname-page {
+  left: 100%;
+}
+/* line 5, _validate.sass */
+.page.validate .validate-page {
+  left: 0%;
+}
+/* line 8, _validate.sass */
+.page.screenname .screenname-page {
+  left: 0%;
+}
+/* line 10, _validate.sass */
+.page.screenname .validate-page {
+  left: -100%;
+}
+
+/* line 13, _validate.sass */
+#validate-page input[type=number] {
+  width: 9rem;
+  text-align: center;
+}
+
+/* line 17, _validate.sass */
+#validate-page input[type=submit] {
+  margin-top: 0.6rem;
+}
+
+/* line 20, _validate.sass */
+#validate-page button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #df351b), color-stop(100%, #f56b1b));
+  background-image: -webkit-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: -moz-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: -o-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  width: 100%;
+  color: white;
+  border: 0.1rem solid #c1331e;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  font-size: 1.7rem;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #cacaca), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(bottom, #cacaca 0%, #ffffff 100%);
+  background-image: -moz-linear-gradient(bottom, #cacaca 0%, #ffffff 100%);
+  background-image: -o-linear-gradient(bottom, #cacaca 0%, #ffffff 100%);
+  background-image: linear-gradient(bottom, #cacaca 0%, #ffffff 100%);
+  color: #333333;
+  border-color: #a6a6a6;
+  padding-top: 0;
+  margin-top: 1.8rem;
+}
+/* line 10, _common_register.sass */
+#validate-page button:disabled {
+  background: #d7d6d6;
+  border-color: #c7c7c7;
+  color: #aaaaaa;
+}
+/* line 14, _common_register.sass */
+#validate-page button:active:not(:disabled) {
+  background: #c1331d;
+  border-color: #c1331e;
+}
+/* line 23, _common_register.sass */
+#validate-page button:active:not(:disabled) {
+  border-color: #a6a6a6;
+  background: #969696;
+}
+
+/* line 25, _validate.sass */
+#validate-page {
+  position: absolute;
+  transition: left 0.4s ease;
+  width: 100%;
+  font-family: "MozTT", sans-serif;
+}
+/* line 32, _common_register.sass */
+#validate-page div.page-wrapper {
+  background: #e6e6e6;
+}
+/* line 34, _common_register.sass */
+#validate-page input[type=submit], #validate-page input[type=button] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #df351b), color-stop(100%, #f56b1b));
+  background-image: -webkit-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: -moz-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: -o-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  width: 100%;
+  color: white;
+  border: 0.1rem solid #c1331e;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  font-size: 1.7rem;
+  width: 100%;
+}
+/* line 10, _common_register.sass */
+#validate-page input[type=submit]:disabled, #validate-page input[type=button]:disabled {
+  background: #d7d6d6;
+  border-color: #c7c7c7;
+  color: #aaaaaa;
+}
+/* line 14, _common_register.sass */
+#validate-page input[type=submit]:active:not(:disabled), #validate-page input[type=button]:active:not(:disabled) {
+  background: #c1331d;
+  border-color: #c1331e;
+}
+/* line 37, _common_register.sass */
+#validate-page input, #validate-page select, #validate-page legend {
+  font-size: 1.9rem;
+  vertical-align: bottom;
+}
+/* line 40, _common_register.sass */
+#validate-page select {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 7.5rem;
+  border-right: none;
+  text-align: center;
+  padding-top: 0.7rem;
+  padding-left: 0.4rem;
+}
+/* line 48, _common_register.sass */
+#validate-page select + input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  max-width: -moz-calc(100% - 8rem);
+  max-width: -webkit-calc(100% - 8rem);
+}
+/* line 53, _common_register.sass */
+#validate-page fieldset {
+  position: relative;
+  width: 100%;
+  border: none;
+}
+/* line 57, _common_register.sass */
+#validate-page fieldset legend {
+  border: 0.1rem solid #cccccc;
+  border-right: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 0;
+  width: 30%;
+  height: 4rem;
+  float: left;
+  position: relative;
+  text-transform: none;
+}
+/* line 68, _common_register.sass */
+#validate-page fieldset input {
+  width: 70%;
+  position: relative;
+}
+/* line 71, _common_register.sass */
+#validate-page a {
+  color: #4599e1;
+  text-decoration: none;
+}
+/* line 74, _common_register.sass */
+#validate-page section.intro, #validate-page section.main {
+  text-align: center;
+  padding: 1rem 2.5rem;
+}
+/* line 77, _common_register.sass */
+#validate-page section.intro p, #validate-page section.main p {
+  margin-top: 1rem;
+}
+/* line 79, _common_register.sass */
+#validate-page section.intro p:first-child, #validate-page section.main p:first-child {
+  margin-top: 0;
+}
+/* line 81, _common_register.sass */
+#validate-page section.intro {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1.7rem;
+  line-height: 2.25rem;
+  color: #555555;
+  background: #f2f2f2;
+  border-bottom: 0.1rem solid white;
+  min-height: 9rem;
+}
+/* line 89, _common_register.sass */
+#validate-page section.main {
+  padding-top: 2rem;
+  color: #858585;
+  font-size: 1.4rem;
+  line-height: 1.75rem;
+}
+/* line 94, _common_register.sass */
+#validate-page section.main p {
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+/* line 97, _common_register.sass */
+#validate-page section.main p.call-to-action {
+  font-size: 1.4rem;
+  color: #3d3d3d;
+  margin-top: 1.75rem;
+  display: table;
+}
+/* line 102, _common_register.sass */
+#validate-page section.main p.call-to-action label {
+  float: left;
+  display: table-cell;
+}
+/* line 105, _common_register.sass */
+#validate-page section.main p.call-to-action label + span {
+  width: -moz-calc(100% - 5rem);
+  padding-top: 1.1rem;
+  text-align: left;
+  min-height: 5rem;
+  display: table-cell;
+  vertical-align: bottom;
+  float: right;
+}
+/* line 113, _common_register.sass */
+#validate-page .spinner {
+  display: none;
+}
+/* line 115, _common_register.sass */
+#validate-page .spinner progress {
+  margin-top: 1rem;
+}
+/* line 117, _common_register.sass */
+#validate-page .hidden {
+  position: absolute;
+  text-indent: -10000px;
+}
+
+/* line 1, _index.sass */
+#loading-wrapper {
+  width: 100%;
+  margin-top: 50%;
+  text-align: center;
+}
+
+/* line 7, _inbox.sass */
+#inbox .page-wrapper {
+  min-height: -moz-calc(100% - 5rem);
+  min-height: -webkit-calc(100% - 5rem);
+  background: white;
+}
+
+/* line 12, _inbox.sass */
+#inbox .legend {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: white;
+  font-size: 1.7rem;
+  line-height: 3.2rem;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  padding-left: 0.7rem;
+  background: white;
+  text-transform: capitalize;
+}
+
+/* line 18, _inbox.sass */
+#inbox section.conversation-list h1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: white;
+  font-size: 1.7rem;
+  line-height: 3.2rem;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  padding-left: 0.7rem;
+  background: #fafafa;
+}
+
+/* line 34, _inbox.sass */
+#inbox li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: white;
+  font-size: 1.7rem;
+  line-height: 3.2rem;
+  white-space: nowrap;
+}
+/* line 77, _common.sass */
+#inbox li a, #inbox li > span {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 19, _common.sass */
+#inbox li a:active, #inbox li > span:active {
+  color: inherit;
+  background: #20839a;
+}
+/* line 80, _common.sass */
+#inbox li aside {
+  display: inline-block;
+  vertical-alignement: middle;
+  position: relative;
+  overflow: visible;
+}
+/* line 84, _common.sass */
+#inbox li aside img {
+  width: 6rem;
+  height: 6rem;
+}
+/* line 88, _common.sass */
+#inbox li dl {
+  display: inline-block;
+  vertical-alignement: middle;
+  width: -moz-calc(100% - $avatar-size);
+  text-align: left;
+  margin-left: 0.5rem;
+}
+/* line 93, _common.sass */
+#inbox li dt {
+  display: none;
+}
+/* line 95, _common.sass */
+#inbox li dd {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 4rem;
+  color: #333333;
+}
+/* line 99, _common.sass */
+#inbox li dd.state {
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: 0rem;
+  color: #666666;
+}
+/* line 105, _common.sass */
+#inbox li button {
+  margin-top: 0.5rem;
+}
+/* line 37, _inbox.sass */
+#inbox li.unread {
+  background-color: #e6e6e6;
+  font-weight: bold;
+}
+/* line 40, _inbox.sass */
+#inbox li p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-align: right;
+}
+/* line 44, _inbox.sass */
+#inbox li a {
+  white-space: nowrap;
+}
+/* line 46, _inbox.sass */
+#inbox li a:active {
+  background-color: #cbf1fa;
+}
+/* line 48, _inbox.sass */
+#inbox li a:active aside:before {
+  background-image: url(images/frame_contact_active.png);
+}
+/* line 50, _inbox.sass */
+#inbox li a.group dd.event {
+  background-repeat: no-repeat;
+  background-image: url(images/shared/headers/images/icons/group.png);
+  background-position: center left;
+  background-size: auto 100%;
+  padding-left: 3rem;
+}
+/* line 56, _inbox.sass */
+#inbox li aside {
+  vertical-align: middle;
+  display: inline-block;
+}
+/* line 59, _inbox.sass */
+#inbox li aside img {
+  border-radius: 50%;
+}
+/* line 61, _inbox.sass */
+#inbox li dl {
+  vertical-align: middle;
+  display: inline-block;
+  width: calc(100% - 9.4rem);
+  padding-left: 1.4rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 0.2rem solid #efefef;
+}
+/* line 69, _inbox.sass */
+#inbox li dd {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+/* line 72, _inbox.sass */
+#inbox li dd.name {
+  font-weight: bold;
+  color: #4c4c4c;
+  font-size: 1.7rem;
+}
+/* line 76, _inbox.sass */
+#inbox li dd.event {
+  padding-right: 3rem;
+}
+/* line 23, _inbox.sass */
+#inbox li dd.text:before {
+  content: "";
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url(images/icon_14px_message_unread2x.png) 0 0 no-repeat;
+  -webkit-background-size: 1.4rem 1.4rem;
+  -moz-background-size: 1.4rem 1.4rem;
+  -o-background-size: 1.4rem 1.4rem;
+  background-size: 1.4rem 1.4rem;
+  margin-right: 0.5rem;
+}
+/* line 31, _inbox.sass */
+#inbox li dd.text.read:before {
+  background-image: url(images/icon_14px_message_read2x.png);
+}
+/* line 23, _inbox.sass */
+#inbox li dd.image:before, #inbox li dd.video:before, #inbox li dd.audio:before {
+  content: "";
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url(images/icon_14px_image_unread2x.png) 0 0 no-repeat;
+  -webkit-background-size: 1.4rem 1.4rem;
+  -moz-background-size: 1.4rem 1.4rem;
+  -o-background-size: 1.4rem 1.4rem;
+  background-size: 1.4rem 1.4rem;
+  margin-right: 0.5rem;
+}
+/* line 31, _inbox.sass */
+#inbox li dd.image.read:before, #inbox li dd.video.read:before, #inbox li dd.audio.read:before {
+  background-image: url(images/icon_14px_image_read2x.png);
+}
+/* line 23, _inbox.sass */
+#inbox li dd.location:before {
+  content: "";
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url(images/icon_14px_place_unread2x.png) 0 0 no-repeat;
+  -webkit-background-size: 1.4rem 1.4rem;
+  -moz-background-size: 1.4rem 1.4rem;
+  -o-background-size: 1.4rem 1.4rem;
+  background-size: 1.4rem 1.4rem;
+  margin-right: 0.5rem;
+}
+/* line 31, _inbox.sass */
+#inbox li dd.location.read:before {
+  background-image: url(images/icon_14px_place_read2x.png);
+}
+/* line 23, _inbox.sass */
+#inbox li dd.notification:before {
+  content: "";
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url(images/icon_14px_notification_unread2x.png) 0 0 no-repeat;
+  -webkit-background-size: 1.4rem 1.4rem;
+  -moz-background-size: 1.4rem 1.4rem;
+  -o-background-size: 1.4rem 1.4rem;
+  background-size: 1.4rem 1.4rem;
+  margin-right: 0.5rem;
+}
+/* line 31, _inbox.sass */
+#inbox li dd.notification.read:before {
+  background-image: url(images/icon_14px_notification_read2x.png);
+}
+
+/* line 87, _inbox.sass */
+#inbox .empty-info {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  padding: 2rem;
+  text-align: center;
+  color: #3d3d3d;
+}
+/* line 93, _inbox.sass */
+#inbox .empty-info p {
+  margin-top: 1rem;
+}
+/* line 95, _inbox.sass */
+#inbox .empty-info p:first-child {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+/* line 99, _inbox.sass */
+#contacts-centinel {
+  text-align: center;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  background: linear-gradient(to bottom, #dadada, #ffffff);
+}
+/* line 104, _inbox.sass */
+#contacts-centinel p {
+  margin-bottom: 1rem;
+  font-size: small;
+  color: #3d3d3d;
+}
+
+/* line 3, _settings.sass */
+.page.settings #settings {
+  left: 0%;
+}
+/* line 5, _settings.sass */
+.page.settings .tos-page {
+  left: 100%;
+}
+/* line 7, _settings.sass */
+.page.settings .privacy-page {
+  left: 100%;
+}
+/* line 10, _settings.sass */
+.page.tos #settings {
+  left: -100%;
+}
+/* line 13, _settings.sass */
+.page.privacy #settings {
+  left: -100%;
+}
+
+/* line 16, _settings.sass */
+#settings {
+  background: #1e1e20;
+  position: absolute;
+  transition: left 0.4s ease;
+  width: 100%;
+  font-family: "MozTT", sans-serif;
+}
+/* line 32, _common_register.sass */
+#settings div.page-wrapper {
+  background: #e6e6e6;
+}
+/* line 34, _common_register.sass */
+#settings input[type=submit], #settings input[type=button] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #df351b), color-stop(100%, #f56b1b));
+  background-image: -webkit-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: -moz-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: -o-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  width: 100%;
+  color: white;
+  border: 0.1rem solid #c1331e;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  font-size: 1.7rem;
+  width: 100%;
+}
+/* line 10, _common_register.sass */
+#settings input[type=submit]:disabled, #settings input[type=button]:disabled {
+  background: #d7d6d6;
+  border-color: #c7c7c7;
+  color: #aaaaaa;
+}
+/* line 14, _common_register.sass */
+#settings input[type=submit]:active:not(:disabled), #settings input[type=button]:active:not(:disabled) {
+  background: #c1331d;
+  border-color: #c1331e;
+}
+/* line 37, _common_register.sass */
+#settings input, #settings select, #settings legend {
+  font-size: 1.9rem;
+  vertical-align: bottom;
+}
+/* line 40, _common_register.sass */
+#settings select {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 7.5rem;
+  border-right: none;
+  text-align: center;
+  padding-top: 0.7rem;
+  padding-left: 0.4rem;
+}
+/* line 48, _common_register.sass */
+#settings select + input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  max-width: -moz-calc(100% - 8rem);
+  max-width: -webkit-calc(100% - 8rem);
+}
+/* line 53, _common_register.sass */
+#settings fieldset {
+  position: relative;
+  width: 100%;
+  border: none;
+}
+/* line 57, _common_register.sass */
+#settings fieldset legend {
+  border: 0.1rem solid #cccccc;
+  border-right: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 0;
+  width: 30%;
+  height: 4rem;
+  float: left;
+  position: relative;
+  text-transform: none;
+}
+/* line 68, _common_register.sass */
+#settings fieldset input {
+  width: 70%;
+  position: relative;
+}
+/* line 71, _common_register.sass */
+#settings a {
+  color: #4599e1;
+  text-decoration: none;
+}
+/* line 74, _common_register.sass */
+#settings section.intro, #settings section.main {
+  text-align: center;
+  padding: 1rem 2.5rem;
+}
+/* line 77, _common_register.sass */
+#settings section.intro p, #settings section.main p {
+  margin-top: 1rem;
+}
+/* line 79, _common_register.sass */
+#settings section.intro p:first-child, #settings section.main p:first-child {
+  margin-top: 0;
+}
+/* line 81, _common_register.sass */
+#settings section.intro {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1.7rem;
+  line-height: 2.25rem;
+  color: #555555;
+  background: #f2f2f2;
+  border-bottom: 0.1rem solid white;
+  min-height: 9rem;
+}
+/* line 89, _common_register.sass */
+#settings section.main {
+  padding-top: 2rem;
+  color: #858585;
+  font-size: 1.4rem;
+  line-height: 1.75rem;
+}
+/* line 94, _common_register.sass */
+#settings section.main p {
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+/* line 97, _common_register.sass */
+#settings section.main p.call-to-action {
+  font-size: 1.4rem;
+  color: #3d3d3d;
+  margin-top: 1.75rem;
+  display: table;
+}
+/* line 102, _common_register.sass */
+#settings section.main p.call-to-action label {
+  float: left;
+  display: table-cell;
+}
+/* line 105, _common_register.sass */
+#settings section.main p.call-to-action label + span {
+  width: -moz-calc(100% - 5rem);
+  padding-top: 1.1rem;
+  text-align: left;
+  min-height: 5rem;
+  display: table-cell;
+  vertical-align: bottom;
+  float: right;
+}
+/* line 113, _common_register.sass */
+#settings .spinner {
+  display: none;
+}
+/* line 115, _common_register.sass */
+#settings .spinner progress {
+  margin-top: 1rem;
+}
+/* line 117, _common_register.sass */
+#settings .hidden {
+  position: absolute;
+  text-indent: -10000px;
+}
+
+/* line 20, _settings.sass */
+#settings div.page-wrapper {
+  background: none;
+}
+
+/* line 23, _settings.sass */
+#settings > header:first-child {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2b2b2f), color-stop(100%, #141415));
+  background: -webkit-linear-gradient(#2b2b2f, #141415);
+  background: -moz-linear-gradient(#2b2b2f, #141415);
+  background: -o-linear-gradient(#2b2b2f, #141415);
+  background: linear-gradient(#2b2b2f, #141415);
+}
+/* line 25, _common.sass */
+#settings > header:first-child .icon:after {
+  background: black;
+}
+
+/* line 26, _settings.sass */
+#settings > footer {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 0.1rem solid #252527;
+  font-size: 1.4rem;
+  color: white;
+}
+/* line 64, _common.sass */
+#settings > footer p {
+  padding-left: 0.7rem;
+  line-height: 4rem;
+}
+
+/* line 29, _settings.sass */
+#settings h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: white;
+  font-size: 1.7rem;
+  line-height: 3.2rem;
+  background: #1e1e20;
+  border-top-color: #252527;
+  border-bottom-color: #030303;
+  color: white;
+  background: #101011;
+  text-indent: 3rem;
+}
+/* line 48, _common.sass */
+#settings h2 a {
+  color: white;
+}
+
+/* line 33, _settings.sass */
+#settings li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: white;
+  font-size: 1.7rem;
+  line-height: 3.2rem;
+  background: #1e1e20;
+  border-top-color: #252527;
+  border-bottom-color: #030303;
+  color: white;
+  line-height: 4.4rem;
+}
+/* line 48, _common.sass */
+#settings li a {
+  color: white;
+}
+/* line 36, _settings.sass */
+#settings li a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  padding-left: 0.7rem;
+}
+/* line 19, _common.sass */
+#settings li a:active {
+  color: inherit;
+  background: #20839a;
+}
+
+/* line 1, _profile.sass */
+#profile {
+  position: absolute;
+  transition: left 0.4s ease;
+  width: 100%;
+  font-family: "MozTT", sans-serif;
+}
+/* line 32, _common_register.sass */
+#profile div.page-wrapper {
+  background: #e6e6e6;
+}
+/* line 34, _common_register.sass */
+#profile input[type=submit], #profile input[type=button] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #df351b), color-stop(100%, #f56b1b));
+  background-image: -webkit-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: -moz-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: -o-linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  background-image: linear-gradient(bottom, #df351b 0%, #f56b1b 100%);
+  width: 100%;
+  color: white;
+  border: 0.1rem solid #c1331e;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  font-size: 1.7rem;
+  width: 100%;
+}
+/* line 10, _common_register.sass */
+#profile input[type=submit]:disabled, #profile input[type=button]:disabled {
+  background: #d7d6d6;
+  border-color: #c7c7c7;
+  color: #aaaaaa;
+}
+/* line 14, _common_register.sass */
+#profile input[type=submit]:active:not(:disabled), #profile input[type=button]:active:not(:disabled) {
+  background: #c1331d;
+  border-color: #c1331e;
+}
+/* line 37, _common_register.sass */
+#profile input, #profile select, #profile legend {
+  font-size: 1.9rem;
+  vertical-align: bottom;
+}
+/* line 40, _common_register.sass */
+#profile select {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 7.5rem;
+  border-right: none;
+  text-align: center;
+  padding-top: 0.7rem;
+  padding-left: 0.4rem;
+}
+/* line 48, _common_register.sass */
+#profile select + input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  max-width: -moz-calc(100% - 8rem);
+  max-width: -webkit-calc(100% - 8rem);
+}
+/* line 53, _common_register.sass */
+#profile fieldset {
+  position: relative;
+  width: 100%;
+  border: none;
+}
+/* line 57, _common_register.sass */
+#profile fieldset legend {
+  border: 0.1rem solid #cccccc;
+  border-right: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 0;
+  width: 30%;
+  height: 4rem;
+  float: left;
+  position: relative;
+  text-transform: none;
+}
+/* line 68, _common_register.sass */
+#profile fieldset input {
+  width: 70%;
+  position: relative;
+}
+/* line 71, _common_register.sass */
+#profile a {
+  color: #4599e1;
+  text-decoration: none;
+}
+/* line 74, _common_register.sass */
+#profile section.intro, #profile section.main {
+  text-align: center;
+  padding: 1rem 2.5rem;
+}
+/* line 77, _common_register.sass */
+#profile section.intro p, #profile section.main p {
+  margin-top: 1rem;
+}
+/* line 79, _common_register.sass */
+#profile section.intro p:first-child, #profile section.main p:first-child {
+  margin-top: 0;
+}
+/* line 81, _common_register.sass */
+#profile section.intro {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1.7rem;
+  line-height: 2.25rem;
+  color: #555555;
+  background: #f2f2f2;
+  border-bottom: 0.1rem solid white;
+  min-height: 9rem;
+}
+/* line 89, _common_register.sass */
+#profile section.main {
+  padding-top: 2rem;
+  color: #858585;
+  font-size: 1.4rem;
+  line-height: 1.75rem;
+}
+/* line 94, _common_register.sass */
+#profile section.main p {
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+/* line 97, _common_register.sass */
+#profile section.main p.call-to-action {
+  font-size: 1.4rem;
+  color: #3d3d3d;
+  margin-top: 1.75rem;
+  display: table;
+}
+/* line 102, _common_register.sass */
+#profile section.main p.call-to-action label {
+  float: left;
+  display: table-cell;
+}
+/* line 105, _common_register.sass */
+#profile section.main p.call-to-action label + span {
+  width: -moz-calc(100% - 5rem);
+  padding-top: 1.1rem;
+  text-align: left;
+  min-height: 5rem;
+  display: table-cell;
+  vertical-align: bottom;
+  float: right;
+}
+/* line 113, _common_register.sass */
+#profile .spinner {
+  display: none;
+}
+/* line 115, _common_register.sass */
+#profile .spinner progress {
+  margin-top: 1rem;
+}
+/* line 117, _common_register.sass */
+#profile .hidden {
+  position: absolute;
+  text-indent: -10000px;
+}
+/* line 3, _profile.sass */
+#profile img {
+  max-width: 20rem;
+  max-height: 15rem;
+  width: auto;
+  height: auto;
+}
+/* line 8, _profile.sass */
+#profile fieldset legend {
+  width: 100%;
+}
+/* line 10, _profile.sass */
+#profile #revision {
+  text-align: center;
+  text-transform: none;
+}
+
+/* line 14, _profile.sass */
+#profile button.leave,
+#profile button.add-participant {
+  margin-top: 1.5rem;
+}
+
+/* line 18, _profile.sass */
+#profile .participants li {
+  border-bottom: 0.1rem solid #cccccc;
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+  white-space: nowrap;
+}
+/* line 5, _contacts.sass */
+#profile .participants li:first-child {
+  margin-top: 1.5rem;
+}
+/* line 7, _contacts.sass */
+#profile .participants li:last-child {
+  margin-bottom: 0;
+  border: none;
+}
+/* line 77, _common.sass */
+#profile .participants li a, #profile .participants li > span {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 19, _common.sass */
+#profile .participants li a:active, #profile .participants li > span:active {
+  color: inherit;
+  background: #20839a;
+}
+/* line 80, _common.sass */
+#profile .participants li aside {
+  display: inline-block;
+  vertical-alignement: middle;
+  position: relative;
+  overflow: visible;
+}
+/* line 84, _common.sass */
+#profile .participants li aside img {
+  width: 6rem;
+  height: 6rem;
+}
+/* line 88, _common.sass */
+#profile .participants li dl {
+  display: inline-block;
+  vertical-alignement: middle;
+  width: -moz-calc(100% - $avatar-size);
+  text-align: left;
+  margin-left: 0.5rem;
+}
+/* line 93, _common.sass */
+#profile .participants li dt {
+  display: none;
+}
+/* line 95, _common.sass */
+#profile .participants li dd {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 4rem;
+  color: #333333;
+}
+/* line 99, _common.sass */
+#profile .participants li dd.state {
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: 0rem;
+  color: #666666;
+}
+/* line 105, _common.sass */
+#profile .participants li button {
+  margin-top: 0.5rem;
+}
+/* line 21, _profile.sass */
+#profile .participants li dl {
+  width: calc(100% - 5rem);
+  text-align: left;
+}
+
+/* line 25, _profile.sass */
+#profile .details {
+  padding: 1rem;
+}
+/* line 28, _profile.sass */
+#profile .details button {
+  background-image: none;
+  background-color: #f2f2f2;
+  text-align: left;
+  font-weight: bold;
+}
+/* line 34, _profile.sass */
+#profile .details button:active {
+  background-color: #b2f2ff;
+  color: white;
+}
+/* line 38, _profile.sass */
+#profile .details button.icon {
+  background-repeat: no-repeat;
+  background-position: right;
+}
+/* line 42, _profile.sass */
+#profile .details button.icon-call {
+  background-image: url(images/call.png);
+}
+/* line 45, _profile.sass */
+#profile .details button.icon-message {
+  background-image: url(images/sms.png);
+}
+/* line 48, _profile.sass */
+#profile .details button.dial {
+  width: calc(100% - 5rem);
+}
+/* line 51, _profile.sass */
+#profile .details button.send-sms {
+  float: right;
+  width: 4rem;
+  background-position: center;
+}
+
+/* line 4, _conversation.sass */
+#conversation {
+  background-color: #e4e4e4;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: auto;
+}
+/* line 13, _conversation.sass */
+#conversation.group header menu {
+  visibility: visible;
+}
+/* line 15, _conversation.sass */
+#conversation:not(.group) h2.participants {
+  visibility: hidden;
+}
+/* line 17, _conversation.sass */
+#conversation.selecting-emoji {
+  bottom: 21rem;
+}
+
+/* line 20, _conversation.sass */
+#conversation > header.connection-status {
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+  z-index: 90;
+}
+
+/* line 26, _conversation.sass */
+#conversation > header span.icon-back {
+  position: relative;
+}
+
+/* line 29, _conversation.sass */
+#conversation > header span.icon-back:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+}
+
+/* line 34, _conversation.sass */
+#conversation > header span.icon-back.new-messages:before {
+  animation: pulse 10s infinite;
+}
+
+/* line 37, _conversation.sass */
+#conversation > header.connection-status .hide {
+  display: none;
+}
+
+/* line 40, _conversation.sass */
+#conversation > header h1 span.emoji {
+  vertical-align: middle;
+}
+
+/* line 43, _conversation.sass */
+#conversation > header h2.in-app-notification {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 50, _conversation.sass */
+#conversation > div.page-wrapper {
+  position: relative;
+  top: 3.5rem;
+  max-height: calc(100% - 10rem - 3.5rem);
+}
+
+/* line 55, _conversation.sass */
+#conversation ul.messages {
+  padding: 0;
+  pointer-events: none;
+}
+/* line 59, _conversation.sass */
+#conversation ul.messages:after {
+  content: "";
+  display: block;
+  margin-top: 1rem;
+  width: 2.8rem;
+  height: 0.6rem;
+  content: "•••";
+  font-size: 22px;
+  font-weight: bolder;
+  color: #979ca3;
+  letter-spacing: 3px;
+  opacity: 0;
+  transition: opacity 0.2 ease;
+  margin-left: 0.7rem;
+}
+/* line 73, _conversation.sass */
+#conversation ul.messages.active:after {
+  opacity: 1;
+}
+
+/* line 76, _conversation.sass */
+#conversation .participants {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* line 81, _conversation.sass */
+#conversation .progressContainer {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  display: none;
+  background: black;
+  top: 8.5rem;
+}
+/* line 89, _conversation.sass */
+#conversation .progressContainer span {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+/* line 93, _conversation.sass */
+#conversation .progressContainer progress.pack-activity {
+  width: 60%;
+  display: table-cell;
+  vertical-align: middle;
+  height: 0.5rem;
+}
+
+/* line 99, _conversation.sass */
+#conversation div.typing {
+  display: none;
+}
+
+/* line 102, _conversation.sass */
+#conversation ul.messages li {
+  overflow: hidden;
+  *zoom: 1;
+  margin-top: 2.5rem;
+  overflow: visible;
+  position: relative;
+}
+/* line 107, _conversation.sass */
+#conversation ul.messages li span.author {
+  display: none;
+  padding-left: 0.2rem;
+}
+/* line 110, _conversation.sass */
+#conversation ul.messages li span.content {
+  pointer-events: auto;
+  border-radius: 0 1.5rem 1.5rem;
+  word-wrap: break-word;
+  position: relative;
+  display: block;
+  background: #fcc987;
+  padding: 1rem 1rem 2rem 3rem;
+  color: black;
+  font-size: 1.9rem;
+}
+/* line 120, _conversation.sass */
+#conversation ul.messages li span.content.placeholder {
+  color: #aaaaaa;
+}
+/* line 122, _conversation.sass */
+#conversation ul.messages li time, #conversation ul.messages li span.status {
+  display: block;
+  width: 50%;
+  font-size: 1.2rem;
+  color: #555555;
+  text-transform: capitalize;
+}
+/* line 128, _conversation.sass */
+#conversation ul.messages li time {
+  float: right;
+  text-align: right;
+  position: relative;
+  top: -2.1rem;
+  right: 1rem;
+}
+/* line 134, _conversation.sass */
+#conversation ul.messages li span.status {
+  float: left;
+  text-align: left;
+}
+/* line 137, _conversation.sass */
+#conversation ul.messages li aside {
+  pointer-events: auto;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  width: 9.4rem;
+  height: 9.4rem;
+  margin-left: 2rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+/* line 146, _conversation.sass */
+#conversation ul.messages li aside a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 151, _conversation.sass */
+#conversation ul.messages li aside img {
+  height: 9.4rem;
+}
+/* line 153, _conversation.sass */
+#conversation ul.messages li aside img.landscape {
+  margin-left: -50%;
+}
+/* line 155, _conversation.sass */
+#conversation ul.messages li aside img.portrait {
+  margin-top: -50%;
+}
+/* line 157, _conversation.sass */
+#conversation ul.messages li.me {
+  padding-left: 4rem;
+  padding-right: 1.5rem;
+}
+/* line 160, _conversation.sass */
+#conversation ul.messages li.me span.status {
+  text-align: left;
+  float: left;
+}
+/* line 163, _conversation.sass */
+#conversation ul.messages li.me span.content {
+  border-radius: 1.5rem 0 1.5rem 1.5rem;
+  background: white;
+}
+/* line 166, _conversation.sass */
+#conversation ul.messages li.me time {
+  float: right;
+  text-align: right;
+}
+/* line 170, _conversation.sass */
+#conversation ul.messages li.me.unsent span.status, #conversation ul.messages li.me.unsent time {
+  color: red;
+}
+/* line 172, _conversation.sass */
+#conversation ul.messages li.me.unsent span.content {
+  border-color: #cd1c1c;
+}
+/* line 175, _conversation.sass */
+#conversation ul.messages li.notification time {
+  float: right;
+  text-align: right;
+  position: relative;
+  right: 0.2rem;
+}
+/* line 180, _conversation.sass */
+#conversation ul.messages li.notification span.content {
+  font-size: 1.3rem;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  text-align: center;
+  color: #333333;
+  background: #dddddd;
+  border-bottom: 0.1rem solid #d7d7d7;
+  border-radius: 0;
+}
+/* line 189, _conversation.sass */
+#conversation ul.messages li.notification span.content:after {
+  background: none;
+}
+/* line 191, _conversation.sass */
+#conversation ul.messages li.other {
+  padding-right: 4rem;
+  padding-left: 1.5rem;
+}
+/* line 194, _conversation.sass */
+#conversation ul.messages li.other span.status {
+  display: none;
+}
+/* line 196, _conversation.sass */
+#conversation ul.messages li.other aside {
+  margin-right: 5rem;
+}
+/* line 199, _conversation.sass */
+#conversation ul.messages li.image span.content {
+  padding-right: 7.7rem;
+  min-height: 7.4rem;
+}
+/* line 202, _conversation.sass */
+#conversation ul.messages li.image aside {
+  overflow: hidden;
+}
+/* line 204, _conversation.sass */
+#conversation ul.messages li.image aside a {
+  font-size: 0px;
+  line-height: 5rem;
+  text-align: right;
+  position: relative;
+}
+/* line 209, _conversation.sass */
+#conversation ul.messages li.image img {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 212, _conversation.sass */
+#conversation ul.messages li.location {
+  text-align: center;
+}
+/* line 214, _conversation.sass */
+#conversation ul.messages li.location a {
+  display: block;
+  padding-bottom: 0.7rem;
+}
+/* line 217, _conversation.sass */
+#conversation ul.messages li.location img {
+  border: 0.1rem solid #e3e3e3;
+  padding: 0.2rem;
+}
+/* line 220, _conversation.sass */
+#conversation ul.messages li .resend:after {
+  content: none;
+}
+/* line 222, _conversation.sass */
+#conversation ul.messages li .sent, #conversation ul.messages li .delivered, #conversation ul.messages li .resend {
+  pointer-events: auto;
+  display: block;
+  position: absolute;
+  top: -1.75rem;
+  left: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.6rem;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  letter-spacing: -1rem;
+  text-indent: -1.1rem;
+  background: #f97c17;
+}
+/* line 237, _conversation.sass */
+#conversation ul.messages li .sent {
+  letter-spacing: normal;
+  text-indent: 0;
+}
+/* line 240, _conversation.sass */
+#conversation ul.messages li .resend {
+  background-size: 2.5rem;
+  background-image: url(images/refresh-icon2x.png);
+  bacKground-position: 0.4rem center;
+  background-repeat: no-repeat;
+  border: none;
+}
+/* line 246, _conversation.sass */
+#conversation ul.messages li .resend span {
+  display: none;
+}
+/* line 248, _conversation.sass */
+#conversation ul.messages li.other .resend {
+  display: none;
+}
+
+/* line 252, _conversation.sass */
+#conversation.group ul.messages li.other span.author {
+  display: inline;
+}
+/* line 254, _conversation.sass */
+#conversation.group ul.messages li.other aside {
+  top: 2.2rem;
+}
+
+/* line 270, _conversation.sass */
+#conversation > footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  background-color: white;
+}
+/* line 278, _conversation.sass */
+#conversation > footer nav {
+  height: 5rem;
+  padding: 0;
+}
+/* line 281, _conversation.sass */
+#conversation > footer ul {
+  font-size: 0;
+  text-align: center;
+}
+/* line 284, _conversation.sass */
+#conversation > footer li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+/* line 287, _conversation.sass */
+#conversation > footer li:first-child {
+  margin-left: 0rem;
+}
+/* line 289, _conversation.sass */
+#conversation > footer button.text {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  text-indent: -999rem;
+  padding: 0;
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: url(images/btn_message_button_normal2x.png) top left no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+/* line 267, _conversation.sass */
+#conversation > footer button.text:active {
+  background-image: url(images/btn_message_button_pressed2x.png);
+}
+/* line 291, _conversation.sass */
+#conversation > footer button.image {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  text-indent: -999rem;
+  padding: 0;
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: url(images/btn_photo_button_normal2x.png) top left no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+/* line 267, _conversation.sass */
+#conversation > footer button.image:active {
+  background-image: url(images/btn_photo_button_pressed2x.png);
+}
+/* line 293, _conversation.sass */
+#conversation > footer button.location {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  text-indent: -999rem;
+  padding: 0;
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: url(images/btn_pin_button_normal2x.png) top left no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+/* line 267, _conversation.sass */
+#conversation > footer button.location:active {
+  background-image: url(images/btn_pin_button_pressed2x.png);
+}
+/* line 295, _conversation.sass */
+#conversation > footer form {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+/* line 298, _conversation.sass */
+#conversation > footer form #message-text-input {
+  font: inherit;
+  font-size: 1.7rem;
+  border: none;
+  border-bottom: 0.1rem solid #f97c17;
+  border-radius: 0 0 0.5rem 0.5rem;
+  background: transparent;
+  width: calc(100% - 0.6rem * 4 - 3rem - 3rem);
+  max-height: 8rem;
+  min-height: 2.2rem;
+  overflow: auto;
+}
+/* line 309, _conversation.sass */
+#conversation > footer form #message-text-input:focus {
+  outline: none;
+}
+/* line 311, _conversation.sass */
+#conversation > footer form > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.3rem;
+  white-space: normal;
+}
+
+/* line 317, _conversation.sass */
+form#conversation-compose,
+form#conversation-compose-image {
+  -webkit-box-shadow: 0 -0.2rem 0.1rem rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 -0.2rem 0.1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 -0.2rem 0.1rem rgba(0, 0, 0, 0.15);
+  background: white;
+  padding: 0.6rem 0.3rem 0 0;
+  font-size: 0;
+}
+
+/* line 324, _conversation.sass */
+form#conversation-compose input[type=text],
+form#conversation-compose-image input[type=text] {
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  background: white;
+  border: 0.1rem solid #c4c4c4;
+  color: #3d3d3d;
+  padding: 0.5rem;
+  display: inline-block;
+  width: -moz-calc(100% - 11.6rem);
+  width: -webkit-calc(100% - 11.6rem);
+  margin-right: 0.7rem;
+}
+
+/* line 337, _conversation.sass */
+form#conversation-compose input[type=text] {
+  width: calc(100% - 15.6rem);
+}
+
+/* line 340, _conversation.sass */
+form#conversation-compose input[type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  width: 6rem;
+  padding: 0.5rem 0rem;
+  background: #363636;
+  font-size: 1.7rem;
+  color: white;
+}
+/* line 349, _conversation.sass */
+form#conversation-compose input[type=submit]:active {
+  background: #00ade1;
+}
+
+/* line 353, _conversation.sass */
+#conversation-send-button,
+#insert-emoji {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+  text-indent: -999rem;
+  width: 3rem;
+  height: 100%;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+/* line 364, _conversation.sass */
+#insert-emoji {
+  width: 4rem;
+  background: url(images/emoji_button.png) center center no-repeat;
+  -webkit-background-size: 3rem 3rem;
+  -moz-background-size: 3rem 3rem;
+  -o-background-size: 3rem 3rem;
+  background-size: 3rem 3rem;
+}
+/* line 368, _conversation.sass */
+#insert-emoji.shown {
+  background-image: url(images/emoji_button_inv.png);
+  background-color: #333333;
+}
+
+/* line 372, _conversation.sass */
+#conversation-send-button {
+  background: url(images/send.png) center center no-repeat;
+  -webkit-background-size: 3rem 3rem;
+  -moz-background-size: 3rem 3rem;
+  -o-background-size: 3rem 3rem;
+  background-size: 3rem 3rem;
+}
+
+/* line 2, _migration.sass */
+#migration-page section.main p {
+  margin-top: 0.5rem;
+}
+/* line 4, _migration.sass */
+#migration-page section.main p .progressvalue {
+  padding-right: 0.5rem;
+}
+/* line 6, _migration.sass */
+#migration-page section.main p.spinner {
+  text-align: center;
+}
+/* line 8, _migration.sass */
+#migration-page section.main p.spinner progress {
+  margin-top: 1rem;
+}
+/* line 10, _migration.sass */
+#migration-page section.main p.hidden {
+  display: none;
+}
+
+/* line 2, _location.sass */
+form.locationScreen p.center, form.locationScreen menu {
+  text-align: center;
+}
+/* line 4, _location.sass */
+form.locationScreen p.hide {
+  display: none;
+}
+/* line 6, _location.sass */
+form.locationScreen button {
+  width: 100% !important;
+}
+/* line 9, _location.sass */
+form.locationScreen section.error p {
+  display: block;
+}
+/* line 11, _location.sass */
+form.locationScreen section.error p.center, form.locationScreen section.error h1 {
+  display: none;
+}
+
+/* line 1, _compose_image.sass */
+#compose-image {
+  text-align: center;
+}
+/* line 3, _compose_image.sass */
+#compose-image .loading {
+  margin-left: 10rem;
+}
+/* line 5, _compose_image.sass */
+#compose-image .page-wrapper {
+  max-height: -moz-calc(100% - 10rem);
+  max-height: -webkit-calc(100% - 10rem);
+}
+/* line 8, _compose_image.sass */
+#compose-image .page-wrapper .viewer {
+  text-align: center;
+  padding: 0.9rem 1.9rem 0 1.9rem;
+}
+/* line 11, _compose_image.sass */
+#compose-image form#conversation-compose-image {
+  display: block;
+}
+/* line 13, _compose_image.sass */
+#compose-image form#conversation-compose-image input[type=text] {
+  width: -moz-calc(100% - 1.3rem);
+  width: -webkit-calc(100% - 1.3rem);
+}
+
+/* line 1, _emoji.sass */
+#emoji-list {
+  min-height: 0;
+  height: 21rem;
+  background-color: #333333;
+  overflow: hidden;
+  z-index: 100;
+  padding: 0.2rem 0 0 0;
+  position: absolute;
+  bottom: 0;
+}
+/* line 10, _emoji.sass */
+#emoji-list [role="toolbar"] {
+  position: absolute;
+  text-align: center;
+}
+/* line 13, _emoji.sass */
+#emoji-list [role="toolbar"] ul:last-child {
+  width: 100%;
+  float: none;
+}
+/* line 16, _emoji.sass */
+#emoji-list [role="toolbar"] ul:last-child li {
+  display: inline-block;
+  float: none;
+}
+
+/* line 20, _emoji.sass */
+#emoji-list .content {
+  height: calc(100% - 4rem - 0.2rem);
+  overflow: auto;
+  text-align: center;
+}
+
+/* line 25, _emoji.sass */
+#emoji-list i.emoji {
+  margin-top: 1.2rem;
+}
+
+/* line 28, _emoji.sass */
+#emoji-list.hidden {
+  display: none;
+}
+
+/* line 31, _emoji.sass */
+#emoji-list .content li {
+  display: inline-block;
+}
+
+/* line 34, _emoji.sass */
+#emoji-list .emoji {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+/* line 38, _emoji.sass */
+#emoji-list .icon.icon-people {
+  background-image: url(images/people.png);
+}
+
+/* line 41, _emoji.sass */
+#emoji-list .icon.icon-nature {
+  background-image: url(images/nature.png);
+}
+
+/* line 44, _emoji.sass */
+#emoji-list .icon.icon-objects {
+  background-image: url(images/objects.png);
+}
+
+/* line 47, _emoji.sass */
+#emoji-list .icon.icon-places {
+  background-image: url(images/places.png);
+}
+
+/* line 50, _emoji.sass */
+#emoji-list .icon.icon-symbols {
+  background-image: url(images/symbols.png);
+}
+
+@keyframes pulse {
+  /* line 2, _animations.scss */
+  0% {
+    box-shadow: 0px 0px 2.1rem 1.4rem rgba(191, 249, 249, 0);
+  }
+
+  /* line 3, _animations.scss */
+  16% {
+    box-shadow: 0px 0px 2.1rem 1.4rem #bff9f9;
+  }
+
+  /* line 4, _animations.scss */
+  33% {
+    box-shadow: 0px 0px 2.1rem 1.4rem rgba(191, 249, 249, 0);
+  }
+
+  /* line 5, _animations.scss */
+  50% {
+    box-shadow: 0px 0px 2.1rem 1.4rem rgba(191, 249, 249, 0.33);
+  }
+
+  /* line 6, _animations.scss */
+  66% {
+    box-shadow: 0px 0px 2.1rem 1.4rem rgba(191, 249, 249, 0);
+  }
+
+  /* line 7, _animations.scss */
+  84% {
+    box-shadow: 0px 0px 2.1rem 1.4rem rgba(191, 249, 249, 0.66);
+  }
+
+  /* line 8, _animations.scss */
+  100% {
+    box-shadow: 0px 0px 2.1rem 1.4rem rgba(191, 249, 249, 0);
+  }
+}
