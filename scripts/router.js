@@ -193,6 +193,7 @@ define([
     },
 
     show: function (view) {
+      console.info(new Error().stack);
       if (this.currentView) {
         // We use these methods instead of .remove() because remove()
         // deletes the View main element
