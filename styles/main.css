@@ -259,57 +259,57 @@ section[role="region"] > header:first-child button:focus {
 ---------------------------------- */
 /* line 173, shared/_headers.scss */
 section[role="region"] > header:first-child .icon-add {
-  background-image: url(/images/shared/headers/images/icons/add.png);
+  background-image: url(../images/shared/headers/images/icons/add.png);
 }
 
 /* line 177, shared/_headers.scss */
 section[role="region"] > header:first-child .icon-compose {
-  background-image: url(/images/shared/headers/images/icons/compose.png);
+  background-image: url(../images/shared/headers/images/icons/compose.png);
 }
 
 /* line 181, shared/_headers.scss */
 section[role="region"] > header:first-child .icon-edit {
-  background-image: url(/images/shared/headers/images/icons/edit.png);
+  background-image: url(../images/shared/headers/images/icons/edit.png);
 }
 
 /* line 185, shared/_headers.scss */
 section[role="region"] > header:first-child .icon-send {
-  background-image: url(/images/shared/headers/images/icons/send.png);
+  background-image: url(../images/shared/headers/images/icons/send.png);
 }
 
 /* line 189, shared/_headers.scss */
 section[role="region"] > header:first-child .icon-close {
-  background-image: url(/images/shared/headers/images/icons/close.png);
+  background-image: url(../images/shared/headers/images/icons/close.png);
 }
 
 /* line 193, shared/_headers.scss */
 section[role="region"] > header:first-child .icon-back {
-  background-image: url(/images/shared/headers/images/icons/back.png);
+  background-image: url(../images/shared/headers/images/icons/back.png);
 }
 
 /* line 197, shared/_headers.scss */
 section[role="region"] > header:first-child .icon-menu {
-  background-image: url(/images/shared/headers/images/icons/menu.png);
+  background-image: url(../images/shared/headers/images/icons/menu.png);
 }
 
 /* line 201, shared/_headers.scss */
 section[role="region"] > header:first-child .icon-user {
-  background-image: url(/images/shared/headers/images/icons/user.png);
+  background-image: url(../images/shared/headers/images/icons/user.png);
 }
 
 /* line 205, shared/_headers.scss */
 section[role="region"] > header:first-child .icon-up {
-  background-image: url(/images/shared/headers/images/icons/up.png);
+  background-image: url(../images/shared/headers/images/icons/up.png);
 }
 
 /* line 209, shared/_headers.scss */
 section[role="region"] > header:first-child .icon-down {
-  background-image: url(/images/shared/headers/images/icons/down.png);
+  background-image: url(../images/shared/headers/images/icons/down.png);
 }
 
 /* line 213, shared/_headers.scss */
 section[role="region"] > header:first-child .icon-options {
-  background-image: url(/images/shared/headers/images/icons/options.png);
+  background-image: url(../images/shared/headers/images/icons/options.png);
 }
 
 /* ----------------------------------
@@ -444,25 +444,25 @@ section[role="region"].skin-organic > header:first-child button:focus,
 /* line 338, shared/_headers.scss */
 section[role="region"].skin-organic > header:first-child .icon-back,
 .skin-organic section[role="region"] > header:first-child .icon-back {
-  background-image: url(/images/shared/headers/images/icons/organic/back.png);
+  background-image: url(../images/shared/headers/images/icons/organic/back.png);
 }
 
 /* line 343, shared/_headers.scss */
 section[role="region"].skin-organic > header:first-child .icon-close,
 .skin-organic section[role="region"] > header:first-child .icon-close {
-  background-image: url(/images/shared/headers/images/icons/organic/close.png);
+  background-image: url(../images/shared/headers/images/icons/organic/close.png);
 }
 
 /* line 348, shared/_headers.scss */
 section[role="region"].skin-organic > header:first-child .icon-add,
 .skin-organic section[role="region"] > header:first-child .icon-add {
-  background-image: url(/images/shared/headers/images/icons/organic/add.png);
+  background-image: url(../images/shared/headers/images/icons/organic/add.png);
 }
 
 /* line 353, shared/_headers.scss */
 section[role="region"].skin-organic > header:first-child .icon-edit,
 .skin-organic section[role="region"] > header:first-child .icon-edit {
-  background-image: url(/images/shared/headers/images/icons/organic/edit.png);
+  background-image: url(../images/shared/headers/images/icons/organic/edit.png);
 }
 
 /* ----------------------------------
@@ -482,7 +482,7 @@ section[role="region"].skin-organic header h2,
 /* Spinner */
 /* line 6, shared/_progress_activity.scss */
 progress:not([value]) {
-  background: url(/images/shared/progress_activity/default.png) no-repeat center center/100% auto;
+  background: url(../images/shared/progress_activity/default.png) no-repeat center center/100% auto;
   animation: 0.9s rotate infinite steps(30);
   width: 2.9rem;
   height: 2.9rem;
@@ -493,13 +493,13 @@ progress:not([value]) {
 @media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
   /* line 6, shared/_progress_activity.scss */
   progress:not([value]) {
-    background-image: url(/images/shared/progress_activity/default2x.png);
+    background-image: url(../images/shared/progress_activity/default2x.png);
   }
 }
 @media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
   /* line 6, shared/_progress_activity.scss */
   progress:not([value]) {
-    background-image: url(/images/shared/progress_activity/default2x.png);
+    background-image: url(../images/shared/progress_activity/default2x.png);
   }
 }
 
@@ -528,7 +528,7 @@ progress[value]::-moz-progress-bar {
 /* Progress bar */
 /* line 39, shared/_progress_activity.scss */
 progress[value].pack-activity {
-  background-image: url(/images/shared/progress_activity/activity.png);
+  background-image: url(../images/shared/progress_activity/activity.png);
   background-repeat: repeat;
   background-size: auto 100%;
   animation: 0.5s move infinite steps(15);
@@ -613,7 +613,7 @@ form.default textarea {
   border-radius: 0.3rem;
   box-shadow: none;
   /* override the box-shadow from the system (performance issue) */
-  background: white url(/images/shared/input_areas/ui/shadow.png) repeat-x left top;
+  background: white url(../images/shared/input_areas/ui/shadow.png) repeat-x left top;
   height: 4rem;
 }
 @media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
@@ -626,7 +626,7 @@ form.default textarea {
   form.default input[type="url"],
   form.default input[type="number"],
   form.default textarea {
-    background-image: url(/images/shared/input_areas/ui/shadow2x.png);
+    background-image: url(../images/shared/input_areas/ui/shadow2x.png);
   }
 }
 @media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
@@ -639,7 +639,7 @@ form.default textarea {
   form.default input[type="url"],
   form.default input[type="number"],
   form.default textarea {
-    background-image: url(/images/shared/input_areas/ui/shadow2x.png);
+    background-image: url(../images/shared/input_areas/ui/shadow2x.png);
   }
 }
 
@@ -654,7 +654,7 @@ form.default select {
   border: 0.1rem solid #ccc;
   border-radius: 0.3rem;
   box-shadow: none;
-  background: white url(/images/shared/input_areas/ui/shadow.png) repeat-x left top;
+  background: white url(../images/shared/input_areas/ui/shadow.png) repeat-x left top;
   position: relative;
   height: 4rem;
   -moz-appearance: textfield;
@@ -662,13 +662,13 @@ form.default select {
 @media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
   /* line 29, shared/_input_areas.scss */
   form.default select {
-    background-image: url(/images/shared/input_areas/ui/shadow2x.png);
+    background-image: url(../images/shared/input_areas/ui/shadow2x.png);
   }
 }
 @media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
   /* line 29, shared/_input_areas.scss */
   form.default select {
-    background-image: url(/images/shared/input_areas/ui/shadow2x.png);
+    background-image: url(../images/shared/input_areas/ui/shadow2x.png);
   }
 }
 
@@ -719,7 +719,7 @@ form.default p textarea + button[type="reset"] {
   font-size: 0;
   opacity: 0;
   pointer-events: none;
-  background: transparent url(/images/shared/input_areas/icons/clear.png) no-repeat 50% 50%/1.7rem auto;
+  background: transparent url(../images/shared/input_areas/icons/clear.png) no-repeat 50% 50%/1.7rem auto;
 }
 
 /* To avoid colission with BB butons */
@@ -758,18 +758,18 @@ form.default fieldset {
   border-radius: 0.3rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
   font: 1.8rem/1em "MozTT", Sans-serif;
-  background: white url(/images/shared/input_areas/ui/shadow.png) repeat-x left top;
+  background: white url(../images/shared/input_areas/ui/shadow.png) repeat-x left top;
 }
 @media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
   /* line 125, shared/_input_areas.scss */
   form.default fieldset {
-    background-image: url(/images/shared/input_areas/ui/shadow2x.png);
+    background-image: url(../images/shared/input_areas/ui/shadow2x.png);
   }
 }
 @media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
   /* line 125, shared/_input_areas.scss */
   form.default fieldset {
-    background-image: url(/images/shared/input_areas/ui/shadow2x.png);
+    background-image: url(../images/shared/input_areas/ui/shadow2x.png);
   }
 }
 
@@ -795,18 +795,18 @@ form.default fieldset legend {
 
 /* line 157, shared/_input_areas.scss */
 form.default fieldset legend.action {
-  background: url(/images/shared/input_areas/icons/arrow.png) no-repeat 100% 100%/1.2rem;
+  background: url(../images/shared/input_areas/icons/arrow.png) no-repeat 100% 100%/1.2rem;
 }
 @media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
   /* line 157, shared/_input_areas.scss */
   form.default fieldset legend.action {
-    background-image: url(/images/shared/input_areas/icons/arrow2x.png);
+    background-image: url(../images/shared/input_areas/icons/arrow2x.png);
   }
 }
 @media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
   /* line 157, shared/_input_areas.scss */
   form.default fieldset legend.action {
-    background-image: url(/images/shared/input_areas/icons/arrow2x.png);
+    background-image: url(../images/shared/input_areas/icons/arrow2x.png);
   }
 }
 
@@ -874,18 +874,18 @@ form.default[role="search"].bottom:after {
   right: 0;
   left: 0;
   height: 0.3rem;
-  background: url(/images/shared/input_areas/ui/shadow-invert.png) repeat-x 0 100%;
+  background: url(../images/shared/input_areas/ui/shadow-invert.png) repeat-x 0 100%;
 }
 @media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
   /* line 213, shared/_input_areas.scss */
   form.default[role="search"].bottom:after {
-    background-image: url(/images/shared/input_areas/ui/shadow-invert2x.png);
+    background-image: url(../images/shared/input_areas/ui/shadow-invert2x.png);
   }
 }
 @media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
   /* line 213, shared/_input_areas.scss */
   form.default[role="search"].bottom:after {
-    background-image: url(/images/shared/input_areas/ui/shadow-invert2x.png);
+    background-image: url(../images/shared/input_areas/ui/shadow-invert2x.png);
   }
 }
 
@@ -911,21 +911,21 @@ form.default[role="search"] p input,
 form.default[role="search"] p textarea {
   height: 3rem;
   border: 0.1rem solid #c1c1c1;
-  background: white url(/images/shared/input_areas/ui/shadow-search.png) repeat-x;
+  background: white url(../images/shared/input_areas/ui/shadow-search.png) repeat-x;
   font-size: 1.8rem;
 }
 @media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
   /* line 241, shared/_input_areas.scss */
   form.default[role="search"] p input,
   form.default[role="search"] p textarea {
-    background-image: url(/images/shared/input_areas/ui/shadow-search2x.png);
+    background-image: url(../images/shared/input_areas/ui/shadow-search2x.png);
   }
 }
 @media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
   /* line 241, shared/_input_areas.scss */
   form.default[role="search"] p input,
   form.default[role="search"] p textarea {
-    background-image: url(/images/shared/input_areas/ui/shadow-search2x.png);
+    background-image: url(../images/shared/input_areas/ui/shadow-search2x.png);
   }
 }
 
@@ -942,7 +942,7 @@ form.default[role="search"] button.icon {
   width: 3rem;
   border: none;
   font-size: 0;
-  background: url(/images/shared/input_areas/ui/separator.png) no-repeat 100% 50%, url(/images/shared/input_areas/ui/background.png) repeat-x 0 100%;
+  background: url(../images/shared/input_areas/ui/separator.png) no-repeat 100% 50%, url(../images/shared/input_areas/ui/background.png) repeat-x 0 100%;
   background-size: auto 100%;
   border-radius: 0;
   margin: 0;
@@ -976,7 +976,7 @@ form.default[role="search"] button[type="submit"] {
   border: none;
   color: #333;
   font: 500 1.8rem/3.2rem "MozTT", Sans-serif;
-  background: url(/images/shared/input_areas/ui/separator.png) no-repeat 0 50%, url(/images/shared/input_areas/ui/active.png) repeat-x 0 100%;
+  background: url(../images/shared/input_areas/ui/separator.png) no-repeat 0 50%, url(../images/shared/input_areas/ui/active.png) repeat-x 0 100%;
   background-size: auto 100%;
   border-radius: 0;
   width: auto;
@@ -1011,7 +1011,7 @@ form.default[role="search"] button[type="submit"]:active {
 /* line 326, shared/_input_areas.scss */
 form.default[role="search"] button[type="submit"][disabled] {
   color: #adadad;
-  background: url(/images/shared/input_areas/ui/separator.png) no-repeat 0 50%, url(/images/shared/input_areas/ui/background.png) repeat-x 0 100%;
+  background: url(../images/shared/input_areas/ui/separator.png) no-repeat 0 50%, url(../images/shared/input_areas/ui/background.png) repeat-x 0 100%;
 }
 
 /* line 333, shared/_input_areas.scss */
@@ -1087,35 +1087,35 @@ label:not([for]) input + span {
 
 /* line 33, shared/_switches.scss */
 label:not([for]) input[type="checkbox"] + span {
-  background: url(/images/shared/switches/check/default.png) no-repeat center top/2.2rem auto;
+  background: url(../images/shared/switches/check/default.png) no-repeat center top/2.2rem auto;
 }
 @media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
   /* line 33, shared/_switches.scss */
   label:not([for]) input[type="checkbox"] + span {
-    background-image: url(/images/shared/switches/check/default2x.png);
+    background-image: url(../images/shared/switches/check/default2x.png);
   }
 }
 @media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
   /* line 33, shared/_switches.scss */
   label:not([for]) input[type="checkbox"] + span {
-    background-image: url(/images/shared/switches/check/default2x.png);
+    background-image: url(../images/shared/switches/check/default2x.png);
   }
 }
 
 /* line 40, shared/_switches.scss */
 label:not([for]) input[type="radio"] + span {
-  background: url(/images/shared/switches/radio/default.png) no-repeat center top/2.2rem auto;
+  background: url(../images/shared/switches/radio/default.png) no-repeat center top/2.2rem auto;
 }
 @media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
   /* line 40, shared/_switches.scss */
   label:not([for]) input[type="radio"] + span {
-    background-image: url(/images/shared/switches/radio/default2x.png);
+    background-image: url(../images/shared/switches/radio/default2x.png);
   }
 }
 @media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
   /* line 40, shared/_switches.scss */
   label:not([for]) input[type="radio"] + span {
-    background-image: url(/images/shared/switches/radio/default2x.png);
+    background-image: url(../images/shared/switches/radio/default2x.png);
   }
 }
 
@@ -1127,35 +1127,35 @@ label:not([for]) input:checked + span {
 /* 'Dangerous' switches */
 /* line 53, shared/_switches.scss */
 label:not([for]).danger input[type="checkbox"] + span {
-  background-image: url(/images/shared/switches/check/danger.png);
+  background-image: url(../images/shared/switches/check/danger.png);
 }
 @media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
   /* line 53, shared/_switches.scss */
   label:not([for]).danger input[type="checkbox"] + span {
-    background-image: url(/images/shared/switches/check/danger2x.png);
+    background-image: url(../images/shared/switches/check/danger2x.png);
   }
 }
 @media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
   /* line 53, shared/_switches.scss */
   label:not([for]).danger input[type="checkbox"] + span {
-    background-image: url(/images/shared/switches/check/danger2x.png);
+    background-image: url(../images/shared/switches/check/danger2x.png);
   }
 }
 
 /* line 60, shared/_switches.scss */
 label:not([for]).danger input[type="radio"] + span {
-  background-image: url(/images/shared/switches/radio/danger.png);
+  background-image: url(../images/shared/switches/radio/danger.png);
 }
 @media all and (min-device-width: 540px) and (max-device-width: 720px) and (max-device-aspect-ratio: 1 / 1) {
   /* line 60, shared/_switches.scss */
   label:not([for]).danger input[type="radio"] + span {
-    background-image: url(/images/shared/switches/radio/danger2x.png);
+    background-image: url(../images/shared/switches/radio/danger2x.png);
   }
 }
 @media all and (min-device-width: 960px) and (max-device-width: 1280px) and (min-device-aspect-ratio: 1 / 1) {
   /* line 60, shared/_switches.scss */
   label:not([for]).danger input[type="radio"] + span {
-    background-image: url(/images/shared/switches/radio/danger2x.png);
+    background-image: url(../images/shared/switches/radio/danger2x.png);
   }
 }
 
@@ -1174,7 +1174,7 @@ label input[type="checkbox"][data-type="switch"] + span {
   border: solid 0.1rem #c2c2c2;
   border-radius: 5.4rem;
   overflow: hidden;
-  background: url(/images/shared/switches/switch/handler.png) no-repeat -0.2rem center;
+  background: url(../images/shared/switches/switch/handler.png) no-repeat -0.2rem center;
   background-size: auto calc(100% + 0.2rem);
   transition: background 0.18s ease;
 }
@@ -1194,7 +1194,7 @@ label input[data-type="switch"] + span:before {
 /* line 99, shared/_switches.scss */
 label input[data-type="switch"] + span:before {
   right: 100%;
-  background: #00c3ea url(/images/shared/switches/switch/icon.png) no-repeat 0.5rem center;
+  background: #00c3ea url(../images/shared/switches/switch/icon.png) no-repeat 0.5rem center;
   background-size: auto calc(100% - 0.2rem);
 }
 
@@ -1253,7 +1253,7 @@ label input[type="checkbox"][data-type="switch"].uninit + span:after {
 /* Main dialog setup */
 /* line 6, shared/_confirm.scss */
 form[role="dialog"][data-type="confirm"] {
-  background: url(/images/shared/confirm/images/ui/pattern.png) repeat left top, url(/images/shared/confirm/images/ui/gradient.png) no-repeat left top/100% 100%;
+  background: url(../images/shared/confirm/images/ui/pattern.png) repeat left top, url(../images/shared/confirm/images/ui/gradient.png) no-repeat left top/100% 100%;
   overflow: hidden;
   position: absolute;
   z-index: 100;
@@ -1311,7 +1311,7 @@ form[role="dialog"][data-type="confirm"] menu {
   margin: 0;
   padding: 1.5rem;
   border-top: solid 0.1rem rgba(255, 255, 255, 0.1);
-  background: #2d2d2d url(/images/shared/confirm/images/ui/pattern.png) repeat left top;
+  background: #2d2d2d url(../images/shared/confirm/images/ui/pattern.png) repeat left top;
   display: block;
   overflow: hidden;
   position: absolute;
@@ -1550,7 +1550,7 @@ a[role="button"],
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  background: #fafafa url(/images/shared/buttons/ui/default.png) repeat-x left bottom/auto 100%;
+  background: #fafafa url(../images/shared/buttons/ui/default.png) repeat-x left bottom/auto 100%;
   border: 0.1rem solid #a6a6a6;
   border-radius: 0.2rem;
   font-weight: 500;
@@ -1579,7 +1579,7 @@ a.recommend[role="button"]:active {
 /* line 52, shared/_buttons.scss */
 button.recommend,
 a[role="button"].recommend {
-  background-image: url(/images/shared/buttons/ui/recommend.png);
+  background-image: url(../images/shared/buttons/ui/recommend.png);
   background-color: #00caf2;
   border-color: #008eab;
 }
@@ -1589,7 +1589,7 @@ a[role="button"].recommend {
 button.danger,
 a.danger[role="button"],
 span.danger[role="button"] {
-  background-image: url(/images/shared/buttons/ui/danger.png);
+  background-image: url(../images/shared/buttons/ui/danger.png);
   background-color: #b70404;
   color: #fff;
   text-shadow: none;
@@ -1601,7 +1601,7 @@ span.danger[role="button"] {
 button.danger:active,
 a[role="button"].danger:active,
 .button.danger:active {
-  background-image: url(/images/shared/buttons/ui/danger-press.png);
+  background-image: url(../images/shared/buttons/ui/danger-press.png);
   background-color: #890707;
 }
 
@@ -1670,7 +1670,7 @@ li .button:after {
   left: 0;
   right: 0;
   height: 0.2rem;
-  background: url(/images/shared/buttons/ui/shadow.png) repeat-x left bottom/auto 100%;
+  background: url(../images/shared/buttons/ui/shadow.png) repeat-x left bottom/auto 100%;
 }
 
 /* Press */
@@ -1715,7 +1715,7 @@ li .button.icon:before {
 /* line 178, shared/_buttons.scss */
 li button.icon-view:before,
 li a[role="button"].icon-view:before {
-  background: url(/images/shared/buttons/icons/view.png) no-repeat 1.6rem 0/1rem 9rem;
+  background: url(../images/shared/buttons/icons/view.png) no-repeat 1.6rem 0/1rem 9rem;
 }
 
 /* line 183, shared/_buttons.scss */
@@ -1741,7 +1741,7 @@ li .button.icon-dialog {
 li button.icon-dialog:before,
 li a[role="button"].icon-dialog:before,
 li .button.icon-dialog:before {
-  background: url(/images/shared/buttons/icons/dialog.png) no-repeat 1.6rem 0/1rem 9rem;
+  background: url(../images/shared/buttons/icons/dialog.png) no-repeat 1.6rem 0/1rem 9rem;
   top: 100%;
   margin-top: -2.4rem;
 }
@@ -1842,7 +1842,7 @@ html[dir="rtl"] li .button.icon:before {
 /* line 292, shared/_buttons.scss */
 html[dir="rtl"] li button.icon-view:before,
 html[dir="rtl"] li a[role="button"].icon-view:before {
-  background-image: url(/images/shared/buttons/icons/view_rtl.png);
+  background-image: url(../images/shared/buttons/icons/view_rtl.png);
   background-position: 1.6rem 0;
 }
 
@@ -1850,7 +1850,7 @@ html[dir="rtl"] li a[role="button"].icon-view:before {
 html[dir="rtl"] li button.icon-dialog:before,
 html[dir="rtl"] li a[role="button"].icon-dialog:before,
 html[dir="rtl"] li .button.icon-dialog:before {
-  background-image: url(/images/shared/buttons/icons/dialog_rtl.png);
+  background-image: url(../images/shared/buttons/icons/dialog_rtl.png);
   background-position: 1.6rem 0;
 }
 
@@ -1875,17 +1875,17 @@ section[role="region"] header h2 {
 
 /* line 17, shared/_overrides.scss */
 section[role="region"] > header:first-child .icon.icon-location {
-  background-image: url(/images/shared/headers/images/icons/location.png);
+  background-image: url(../images/shared/headers/images/icons/location.png);
 }
 
 /* line 21, shared/_overrides.scss */
 section[role="region"] > header:first-child .icon.icon-attach {
-  background-image: url(/images/shared/headers/images/icons/attachments.png);
+  background-image: url(../images/shared/headers/images/icons/attachments.png);
 }
 
 /* line 25, shared/_overrides.scss */
 section[role="region"] > header:first-child .icon.icon-group {
-  background-image: url(/images/shared/headers/images/icons/group.png);
+  background-image: url(../images/shared/headers/images/icons/group.png);
 }
 
 /* line 29, shared/_overrides.scss */
@@ -2630,12 +2630,12 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
 }
 /* line 48, _inbox.sass */
 #inbox li a:active aside:before {
-  background-image: url(/images/frame_contact_active.png);
+  background-image: url(../images/frame_contact_active.png);
 }
 /* line 50, _inbox.sass */
 #inbox li a.group dd.event {
   background-repeat: no-repeat;
-  background-image: url(/images/shared/headers/images/icons/group.png);
+  background-image: url(../images/shared/headers/images/icons/group.png);
   background-position: center left;
   background-size: auto 100%;
   padding-left: 3rem;
@@ -2680,7 +2680,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
   display: inline-block;
   width: 1.4rem;
   height: 1.4rem;
-  background: url(/images/icon_14px_message_unread2x.png) 0 0 no-repeat;
+  background: url(../images/icon_14px_message_unread2x.png) 0 0 no-repeat;
   -webkit-background-size: 1.4rem 1.4rem;
   -moz-background-size: 1.4rem 1.4rem;
   -o-background-size: 1.4rem 1.4rem;
@@ -2689,7 +2689,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
 }
 /* line 31, _inbox.sass */
 #inbox li dd.text.read:before {
-  background-image: url(/images/icon_14px_message_read2x.png);
+  background-image: url(../images/icon_14px_message_read2x.png);
 }
 /* line 23, _inbox.sass */
 #inbox li dd.image:before, #inbox li dd.video:before, #inbox li dd.audio:before {
@@ -2697,7 +2697,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
   display: inline-block;
   width: 1.4rem;
   height: 1.4rem;
-  background: url(/images/icon_14px_image_unread2x.png) 0 0 no-repeat;
+  background: url(../images/icon_14px_image_unread2x.png) 0 0 no-repeat;
   -webkit-background-size: 1.4rem 1.4rem;
   -moz-background-size: 1.4rem 1.4rem;
   -o-background-size: 1.4rem 1.4rem;
@@ -2706,7 +2706,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
 }
 /* line 31, _inbox.sass */
 #inbox li dd.image.read:before, #inbox li dd.video.read:before, #inbox li dd.audio.read:before {
-  background-image: url(/images/icon_14px_image_read2x.png);
+  background-image: url(../images/icon_14px_image_read2x.png);
 }
 /* line 23, _inbox.sass */
 #inbox li dd.location:before {
@@ -2714,7 +2714,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
   display: inline-block;
   width: 1.4rem;
   height: 1.4rem;
-  background: url(/images/icon_14px_place_unread2x.png) 0 0 no-repeat;
+  background: url(../images/icon_14px_place_unread2x.png) 0 0 no-repeat;
   -webkit-background-size: 1.4rem 1.4rem;
   -moz-background-size: 1.4rem 1.4rem;
   -o-background-size: 1.4rem 1.4rem;
@@ -2723,7 +2723,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
 }
 /* line 31, _inbox.sass */
 #inbox li dd.location.read:before {
-  background-image: url(/images/icon_14px_place_read2x.png);
+  background-image: url(../images/icon_14px_place_read2x.png);
 }
 /* line 23, _inbox.sass */
 #inbox li dd.notification:before {
@@ -2731,7 +2731,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
   display: inline-block;
   width: 1.4rem;
   height: 1.4rem;
-  background: url(/images/icon_14px_notification_unread2x.png) 0 0 no-repeat;
+  background: url(../images/icon_14px_notification_unread2x.png) 0 0 no-repeat;
   -webkit-background-size: 1.4rem 1.4rem;
   -moz-background-size: 1.4rem 1.4rem;
   -o-background-size: 1.4rem 1.4rem;
@@ -2740,7 +2740,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
 }
 /* line 31, _inbox.sass */
 #inbox li dd.notification.read:before {
-  background-image: url(/images/icon_14px_notification_read2x.png);
+  background-image: url(../images/icon_14px_notification_read2x.png);
 }
 
 /* line 87, _inbox.sass */
@@ -3345,11 +3345,11 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
 }
 /* line 42, _profile.sass */
 #profile .details button.icon-call {
-  background-image: url(/images/call.png);
+  background-image: url(../images/call.png);
 }
 /* line 45, _profile.sass */
 #profile .details button.icon-message {
-  background-image: url(/images/sms.png);
+  background-image: url(../images/sms.png);
 }
 /* line 48, _profile.sass */
 #profile .details button.dial {
@@ -3705,7 +3705,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
 /* line 240, _conversation.sass */
 #conversation ul.messages li .resend {
   background-size: 2.5rem;
-  background-image: url(/images/refresh-icon2x.png);
+  background-image: url(../images/refresh-icon2x.png);
   bacKground-position: 0.4rem center;
   background-repeat: no-repeat;
   border: none;
@@ -3770,7 +3770,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
   display: block;
   width: 4.5rem;
   height: 4.5rem;
-  background: url(/images/btn_message_button_normal2x.png) top left no-repeat;
+  background: url(../images/btn_message_button_normal2x.png) top left no-repeat;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
@@ -3778,7 +3778,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
 }
 /* line 267, _conversation.sass */
 #conversation > footer button.text:active {
-  background-image: url(/images/btn_message_button_pressed2x.png);
+  background-image: url(../images/btn_message_button_pressed2x.png);
 }
 /* line 291, _conversation.sass */
 #conversation > footer button.image {
@@ -3791,7 +3791,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
   display: block;
   width: 4.5rem;
   height: 4.5rem;
-  background: url(/images/btn_photo_button_normal2x.png) top left no-repeat;
+  background: url(../images/btn_photo_button_normal2x.png) top left no-repeat;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
@@ -3799,7 +3799,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
 }
 /* line 267, _conversation.sass */
 #conversation > footer button.image:active {
-  background-image: url(/images/btn_photo_button_pressed2x.png);
+  background-image: url(../images/btn_photo_button_pressed2x.png);
 }
 /* line 293, _conversation.sass */
 #conversation > footer button.location {
@@ -3812,7 +3812,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
   display: block;
   width: 4.5rem;
   height: 4.5rem;
-  background: url(/images/btn_pin_button_normal2x.png) top left no-repeat;
+  background: url(../images/btn_pin_button_normal2x.png) top left no-repeat;
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
@@ -3820,7 +3820,7 @@ button::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=butto
 }
 /* line 267, _conversation.sass */
 #conversation > footer button.location:active {
-  background-image: url(/images/btn_pin_button_pressed2x.png);
+  background-image: url(../images/btn_pin_button_pressed2x.png);
 }
 /* line 295, _conversation.sass */
 #conversation > footer form {
@@ -3929,7 +3929,7 @@ form#conversation-compose input[type=submit]:active {
 /* line 364, _conversation.sass */
 #insert-emoji {
   width: 4rem;
-  background: url(/images/emoji_button.png) center center no-repeat;
+  background: url(../images/emoji_button.png) center center no-repeat;
   -webkit-background-size: 3rem 3rem;
   -moz-background-size: 3rem 3rem;
   -o-background-size: 3rem 3rem;
@@ -3937,13 +3937,13 @@ form#conversation-compose input[type=submit]:active {
 }
 /* line 368, _conversation.sass */
 #insert-emoji.shown {
-  background-image: url(/images/emoji_button_inv.png);
+  background-image: url(../images/emoji_button_inv.png);
   background-color: #333333;
 }
 
 /* line 372, _conversation.sass */
 #conversation-send-button {
-  background: url(/images/send.png) center center no-repeat;
+  background: url(../images/send.png) center center no-repeat;
   -webkit-background-size: 3rem 3rem;
   -moz-background-size: 3rem 3rem;
   -o-background-size: 3rem 3rem;
@@ -4077,27 +4077,27 @@ form.locationScreen section.error p.center, form.locationScreen section.error h1
 
 /* line 38, _emoji.sass */
 #emoji-list .icon.icon-people {
-  background-image: url(/images/people.png);
+  background-image: url(../images/people.png);
 }
 
 /* line 41, _emoji.sass */
 #emoji-list .icon.icon-nature {
-  background-image: url(/images/nature.png);
+  background-image: url(../images/nature.png);
 }
 
 /* line 44, _emoji.sass */
 #emoji-list .icon.icon-objects {
-  background-image: url(/images/objects.png);
+  background-image: url(../images/objects.png);
 }
 
 /* line 47, _emoji.sass */
 #emoji-list .icon.icon-places {
-  background-image: url(/images/places.png);
+  background-image: url(../images/places.png);
 }
 
 /* line 50, _emoji.sass */
 #emoji-list .icon.icon-symbols {
-  background-image: url(/images/symbols.png);
+  background-image: url(../images/symbols.png);
 }
 
 @keyframes pulse {
