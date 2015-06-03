@@ -3,7 +3,6 @@ define(['vendor/async-storage/async-storage'], function (AsyncStorage) {
 
   return {
     store: function (userId, password, msisdn, mcc, mnc, profile, callback) {
-      console.info(new Error().stack);
       AsyncStorage.setItem('credentials', {
         userId: userId,
         password: password,
@@ -20,7 +19,6 @@ define(['vendor/async-storage/async-storage'], function (AsyncStorage) {
     },
 
     storeProfileData: function (screenName, status, photo, thumb, callback) {
-      console.info(new Error().stack);
       AsyncStorage.getItem('credentials', function (credentials) {
         if (credentials) {
           AsyncStorage.setItem('credentials', {

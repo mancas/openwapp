@@ -164,12 +164,10 @@ define([
       var _this = this;
       global.client.validate(
         countryCode, phone, pin, screenName, function (err, result) {
-console.info(result);
           if (err) {
             return callback(err, result);
           }
           var params = _this._parseApiResults(result);
-console.info(params);
           params.msisdn = countryCode + phone;
           _this.set(params);
           callback(null);

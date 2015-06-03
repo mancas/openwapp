@@ -91,6 +91,7 @@
           data: extraData,
           processAnswer: answer => {
             if (answer.event) {
+              self._updateXMLHttpRequestObject(answer.event);
               self['_' + extraData.operation](answer.event);
             }
           }
@@ -211,11 +212,6 @@
       var type = this._responseType;
       var value;
       switch (type) {
-        case 'arraybuffer':
-          value = base64DecToArr(this._response).buffer;
-          break;
-        case 'blob':
-          break;
         case 'document':
           var doctype = document.implementation.createDocumentType('html',
             '', '');
@@ -225,12 +221,15 @@
         case 'json':
           value = JSON.parse(this._response);
           break;
+        case 'blob':
         case 'moz-blob':
+          value = new Blob(this._response);
+          break;
+        case 'arraybuffer':
+        case 'moz-chunked-arraybuffer':
+          value = base64DecToArr(this._response).buffer;
           break;
         case 'moz-chunked-text':
-          break;
-        case 'moz-chunked-arraybuffer':
-          break;
         case 'text':
         case '':
           value = this._response;
