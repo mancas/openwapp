@@ -91,6 +91,7 @@
           data: extraData,
           processAnswer: answer => {
             if (answer.event) {
+              console.info(answer.event);
               self['_' + extraData.operation](answer.event);
             }
           }
