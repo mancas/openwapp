@@ -205,7 +205,9 @@
     });
 
     this._convertToResponseType = function() {
+      console.info(this);
       var type = this._responseType;
+      console.info(type);
       var value;
       switch (type) {
         case 'arraybuffer':
