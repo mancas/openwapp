@@ -196,6 +196,7 @@
         },
         set: function(value) {
           this['_' + property] = value;
+          console.info('set ' + property, 'value ' + value);
           navConnHelper.methodCall({
                                     methodName: 'set',
                                     numParams: 2,
