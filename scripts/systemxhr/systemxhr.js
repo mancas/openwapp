@@ -192,21 +192,49 @@
       Object.defineProperty(this, property, {
         enumerable: true,
         get: function() {
+          if (property === 'response') {
+            this._convertToResponseType();
+          }
           return this['_' + property];
         },
         set: function(value) {
           this['_' + property] = value;
-          console.info('set ' + property, 'value ' + value);
-          navConnHelper.methodCall({
-                                    methodName: 'set',
-                                    numParams: 2,
-                                    returnValue: VoidRequest,
-                                    promise: _systemxhr,
-                                    field: 'xhrId'
-                                  }, property, value);
         }
       });
     });
+
+    this._convertToResponseType = function() {
+      var type = this._responseType;
+      var value;
+      switch (type) {
+        case 'arraybuffer':
+          value = base64DecToArr(this._response).buffer;
+          break;
+        case 'blob':
+          break;
+        case 'document':
+          var doctype = document.implementation.createDocumentType('html',
+            '', '');
+          value = document.implementation.createDocument('', 'html', doctype);
+          value.documentElement.innerHTML = this._response;
+          break;
+        case 'json':
+          value = JSON.parse(this._response);
+          break;
+        case 'moz-blob':
+          break;
+        case 'moz-chunked-text':
+          break;
+        case 'moz-chunked-arraybuffer':
+          break;
+        case 'text':
+        case '':
+        default:
+          break;
+      }
+
+      this._response = value;
+    };
 
     Object.defineProperty(this, 'onreadystatechange', {
       get: function() {
