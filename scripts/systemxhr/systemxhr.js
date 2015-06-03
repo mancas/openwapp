@@ -198,17 +198,17 @@
           return self['_' + property];
         },
         set: function(value) {
-          console.info(self, this);
           self['_' + property] = value;
-          console.info(value);
         }
       });
     });
 
     this._convertToResponseType = function() {
-      console.info(this);
+      if (typeof this._response !== 'string') {
+        return;
+      }
+
       var type = this._responseType;
-      console.info(type);
       var value;
       switch (type) {
         case 'arraybuffer':
@@ -233,12 +233,11 @@
           break;
         case 'text':
         case '':
+          value = this._response;
         default:
           break;
       }
-console.info(this._response);
       this._response = value;
-console.info(this._response);
     };
 
     Object.defineProperty(this, 'onreadystatechange', {
