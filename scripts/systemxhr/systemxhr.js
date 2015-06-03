@@ -193,12 +193,12 @@
         enumerable: true,
         get: function() {
           if (property === 'response') {
-            this._convertToResponseType();
+            self._convertToResponseType();
           }
-          return this['_' + property];
+          return self['_' + property];
         },
         set: function(value) {
-          this['_' + property] = value;
+          self['_' + property] = value;
           console.info(value);
         }
       });
