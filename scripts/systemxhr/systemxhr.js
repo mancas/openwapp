@@ -199,6 +199,7 @@
         },
         set: function(value) {
           this['_' + property] = value;
+          console.info(value);
         }
       });
     });
