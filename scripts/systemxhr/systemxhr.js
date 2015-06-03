@@ -198,6 +198,7 @@
           return self['_' + property];
         },
         set: function(value) {
+          console.info(self, this);
           self['_' + property] = value;
           console.info(value);
         }
@@ -252,7 +253,8 @@ console.info(this._response);
 
     this._updateXMLHttpRequestObject = function(evt) {
       properties.forEach(property => {
-        this['_' + property] = evt.target[property];
+        if (property !== 'responseType')
+          this['_' + property] = evt.target[property];
       });
       this['_responseHeaders'] = evt.responseHeaders;
     };
