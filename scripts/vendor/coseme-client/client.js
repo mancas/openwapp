@@ -611,7 +611,7 @@
           var origSeed = getSeed();
 
           function onReady(response) {
-            console.info(response);
+            console.info(response, response.status, response.status != 'fail');
             if (response.status !== 'fail') {
               callback(null, response);
             } else {
