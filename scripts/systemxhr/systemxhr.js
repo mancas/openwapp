@@ -233,8 +233,9 @@
         default:
           break;
       }
-
+console.info(this._response);
       this._response = value;
+console.info(this._response);
     };
 
     Object.defineProperty(this, 'onreadystatechange', {
