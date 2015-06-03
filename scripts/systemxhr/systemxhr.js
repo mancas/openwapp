@@ -49,7 +49,7 @@
   'use strict';
 
   function debug(text) {
-    console.log('MANU *-*-*- System XHR PF: ' + text);
+    console.log('*-*-*- System XHR PF: ' + text);
   }
 
   // Wishful thinking at the moment...
@@ -91,7 +91,6 @@
           data: extraData,
           processAnswer: answer => {
             if (answer.event) {
-              console.info(answer.event);
               self['_' + extraData.operation](answer.event);
             }
           }
@@ -197,6 +196,13 @@
         },
         set: function(value) {
           this['_' + property] = value;
+          navConnHelper.methodCall({
+                                    methodName: 'set',
+                                    numParams: 2,
+                                    returnValue: VoidRequest,
+                                    promise: _systemxhr,
+                                    field: 'xhrId'
+                                  }, property, value);
         }
       });
     });
