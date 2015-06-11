@@ -263,12 +263,17 @@ define([
         if (err === 'cancelled') {
           return;
         }
+        console.info(err, contact);
         if (!err && contact) {
           if (contact.get('confirmed')) {
             global.contacts.add(contact);
+            console.log('add');
             contact.saveToStorage();
+            console.log('to storage');
             contact.syncWithServer();
+            console.log('sync')
             contact.once('synchronized:server', contact.saveToStorage);
+            console.log('synced!');
             _this._addParticipant(contact);
           }
           else {
@@ -323,7 +328,7 @@ define([
 
     _addParticipant: function (contact) {
       var el = this.$el.find('ul.participants');
-
+console.info('participant added');
       el.append(new ContactView({
           model: contact,
           showControls: this.showControls
