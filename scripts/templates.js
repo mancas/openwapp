@@ -55,7 +55,7 @@ this["Handlebars"]["contact-photo"] = Handlebars.template({"1":function(depth0,h
     + escapeExpression(((helper = (helper = helpers.photoURL || (depth0 != null ? depth0.photoURL : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"photoURL","hash":{},"data":data}) : helper)))
     + "\"\n";
 },"3":function(depth0,helpers,partials,data) {
-  return "    src=\"/images/unknown_avatar.png\"\n";
+  return "    src=\"images/unknown_avatar.png\"\n";
   },"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
   var stack1, buffer = "<img class=\"avatar\"\n";
   stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.photoURL : depth0), {"name":"if","hash":{},"fn":this.program(1, data),"inverse":this.program(3, data),"data":data});
@@ -67,7 +67,7 @@ this["Handlebars"]["contact-profile"] = Handlebars.template({"compiler":[6,">= 2
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
   return "<section role=\"region\" id=\"profile\">\n  <header>\n    <button class=\"close\"><span class=\"icon icon-close\">close</span></button>\n    <h1>"
     + escapeExpression(((helper = (helper = helpers.displayName || (depth0 != null ? depth0.displayName : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"displayName","hash":{},"data":data}) : helper)))
-    + "</h1>\n  </header>\n\n  <div class=\"page-wrapper\">\n    <section class=\"main\">\n      <p>\n        <img id=\"profile-picture\" type=\"text\" src=\"/images/unknown_avatar.png\"\n        />\n      </p>\n      <p id=\"state\">"
+    + "</h1>\n  </header>\n\n  <div class=\"page-wrapper\">\n    <section class=\"main\">\n      <p>\n        <img id=\"profile-picture\" type=\"text\" src=\"images/unknown_avatar.png\"\n        />\n      </p>\n      <p id=\"state\">"
     + escapeExpression(((helper = (helper = helpers.state || (depth0 != null ? depth0.state : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"state","hash":{},"data":data}) : helper)))
     + "</p>\n    </section>\n    <section class=\"details\">\n      <div class=\"item-media pull-right\">\n        <button class=\"send-sms icon icon-message\" data-phone=\""
     + escapeExpression(((helper = (helper = helpers.phone || (depth0 != null ? depth0.phone : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"phone","hash":{},"data":data}) : helper)))
@@ -157,7 +157,7 @@ this["Handlebars"]["group-profile"] = Handlebars.template({"1":function(depth0,h
     + "\n      </button>\n    </menu>\n    <h1>\n";
   stack1 = helpers['if'].call(depth0, (depth0 != null ? depth0.isEditMode : depth0), {"name":"if","hash":{},"fn":this.program(3, data),"inverse":this.program(5, data),"data":data});
   if (stack1 != null) { buffer += stack1; }
-  buffer += "    </h1>\n  </header>\n\n  <div class=\"page-wrapper\">\n    <section class=\"main\">\n      <form id=\"screen-name-form\" class=\"default\">\n        <p>\n          <img id=\"profile-picture\" type=\"text\" src=\"/images/unknown_avatar.png\"\n          alt=\""
+  buffer += "    </h1>\n  </header>\n\n  <div class=\"page-wrapper\">\n    <section class=\"main\">\n      <form id=\"screen-name-form\" class=\"default\">\n        <p>\n          <img id=\"profile-picture\" type=\"text\" src=\"images/unknown_avatar.png\"\n          alt=\""
     + escapeExpression(((helpers.translate || (depth0 && depth0.translate) || helperMissing).call(depth0, "groupPictureDescription", {"name":"translate","hash":{},"data":data})))
     + "\"/>\n        </p>\n        <p class=\"not-square hidden\">"
     + escapeExpression(((helpers.translate || (depth0 && depth0.translate) || helperMissing).call(depth0, "notSquarePicture", {"name":"translate","hash":{},"data":data})))
@@ -421,7 +421,7 @@ this["Handlebars"]["profile"] = Handlebars.template({"compiler":[6,">= 2.0.0-bet
     + escapeExpression(((helpers.translate || (depth0 && depth0.translate) || helperMissing).call(depth0, "eachHour", {"name":"translate","hash":{},"data":data})))
     + "</option>\n        <option value=\"0\">"
     + escapeExpression(((helpers.translate || (depth0 && depth0.translate) || helperMissing).call(depth0, "disabled", {"name":"translate","hash":{},"data":data})))
-    + "</option>\n      </select>\n    </p>\n    <section class=\"main\">\n      <form id=\"screen-name-form\" class=\"default\">\n        <p>\n          <img id=\"profile-picture\" type=\"text\" src=\"/images/unknown_avatar.png\"\n          alt=\"Avatar\"/>\n        </p>\n        <p class=\"not-square hidden\">"
+    + "</option>\n      </select>\n    </p>\n    <section class=\"main\">\n      <form id=\"screen-name-form\" class=\"default\">\n        <p>\n          <img id=\"profile-picture\" type=\"text\" src=\"images/unknown_avatar.png\"\n          alt=\"Avatar\"/>\n        </p>\n        <p class=\"not-square hidden\">"
     + escapeExpression(((helpers.translate || (depth0 && depth0.translate) || helperMissing).call(depth0, "notSquarePicture", {"name":"translate","hash":{},"data":data})))
     + "</p>\n        <p>"
     + escapeExpression(((helpers.translate || (depth0 && depth0.translate) || helperMissing).call(depth0, "pictureDescription", {"name":"translate","hash":{},"data":data})))
